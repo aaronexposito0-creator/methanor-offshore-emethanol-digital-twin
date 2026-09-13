@@ -1,0 +1,898 @@
+[
+  {
+    "id": "S01",
+    "title": "Definition of the IEA 15-MW Offshore Reference Wind Turbine",
+    "organization": "NREL / IEA Wind TCP",
+    "year": 2020,
+    "url": "https://doi.org/10.2172/1603478",
+    "use": "15 MW reference turbine geometry and operating envelope: 240 m rotor, 150 m hub height, 3 m/s cut-in, 10.59 m/s rated and 25 m/s cut-out.",
+    "quality": "Primary technical reference",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "turbine rating",
+      "rotor diameter",
+      "hub height",
+      "cut-in/rated/cut-out"
+    ],
+    "used_in": [
+      "Home",
+      "P2X",
+      "Platform",
+      "Methodology"
+    ],
+    "use_es": "Geometría y envolvente operativa de la turbina de referencia de 15 MW: rotor de 240 m, buje a 150 m, cut-in a 3 m/s, nominal a 10,59 m/s y cut-out a 25 m/s.",
+    "accessed": "2026-09-13",
+    "published_year": 2020,
+    "date_basis": "published_or_reference_year"
+  },
+  {
+    "id": "S02",
+    "title": "Technical Targets for Proton Exchange Membrane Electrolysis",
+    "organization": "U.S. Department of Energy",
+    "year": 2026,
+    "url": "https://www.energy.gov/cmei/fuels/technical-targets-proton-exchange-membrane-electrolysis",
+    "use": "Benchmark for PEM system energy consumption, durability and cost targets. MethaNor uses an editable 52 kWh/kg-H2 screening value near the DOE system target range.",
+    "quality": "Government technical target",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "PEM electricity intensity",
+      "stack/system efficiency",
+      "lifetime"
+    ],
+    "used_in": [
+      "P2X",
+      "Economics",
+      "Methodology"
+    ],
+    "use_es": "Referencia para consumo energético, durabilidad y objetivos de coste de sistemas PEM. MethaNor usa un valor de cribado editable de 52 kWh/kg H₂ próximo al rango objetivo del DOE.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S03",
+    "title": "Innovation Outlook: Renewable Methanol",
+    "organization": "IRENA & Methanol Institute",
+    "year": 2021,
+    "url": "https://www.irena.org/publications/2021/Jan/Innovation-Outlook-Renewable-Methanol",
+    "use": "Renewable/e-methanol pathways, technology context, cost framing and feedstock discussion.",
+    "quality": "International agency report",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "renewable methanol pathway",
+      "cost context",
+      "process framing"
+    ],
+    "used_in": [
+      "P2X",
+      "Economics",
+      "Methodology"
+    ],
+    "use_es": "Rutas de metanol renovable/e-metanol, contexto tecnológico, marco de costes y discusión de materias primas.",
+    "accessed": "2026-09-13",
+    "published_year": 2021,
+    "date_basis": "published_or_reference_year"
+  },
+  {
+    "id": "S04",
+    "title": "ERA5 hourly data on single levels from 1940 to present",
+    "organization": "Copernicus Climate Change Service / ECMWF",
+    "year": 2018,
+    "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+    "use": "Target source for reproducible hourly wind and wave time series. The current 8.63 m/s baseline remains the thesis value until the pipeline is refreshed from ERA5.",
+    "quality": "Official reanalysis dataset",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "wind speed",
+      "significant wave height",
+      "wave period"
+    ],
+    "used_in": [
+      "Site",
+      "P2X",
+      "Methodology"
+    ],
+    "use_es": "Fuente objetivo para series horarias reproducibles de viento y oleaje. La referencia actual de 8,63 m/s sigue siendo el valor del TFG hasta actualizar el flujo de datos con ERA5.",
+    "accessed": "2026-09-13",
+    "published_year": 2018,
+    "date_basis": "published_or_reference_year"
+  },
+  {
+    "id": "S05",
+    "title": "EMODnet Bathymetry",
+    "organization": "European Marine Observation and Data Network",
+    "year": 2026,
+    "url": "https://emodnet.ec.europa.eu/en/bathymetry",
+    "use": "Preferred European source for bathymetric DTM, digital coastline and seabed context in future GIS refreshes.",
+    "quality": "Official European marine dataset",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "water depth",
+      "bathymetry",
+      "coastline"
+    ],
+    "used_in": [
+      "Site",
+      "Platform",
+      "Methodology"
+    ],
+    "use_es": "Fuente europea preferente para DTM batimétrico, línea de costa digital y contexto del fondo marino en futuras actualizaciones SIG.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S06",
+    "title": "Planes de Ordenación del Espacio Marítimo (POEM)",
+    "organization": "MITECO, Spain",
+    "year": 2023,
+    "url": "https://www.miteco.gob.es/es/costas/temas/proteccion-medio-marino/ordenacion-del-espacio-maritimo.html",
+    "use": "Spanish maritime spatial-planning reference. MethaNor does not claim permitting compatibility until a GIS intersection with the official POEM layers is performed.",
+    "quality": "Official regulatory geospatial source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "spatial planning",
+      "priority uses",
+      "permitting screening"
+    ],
+    "used_in": [
+      "Site",
+      "Evidence"
+    ],
+    "use_es": "Referencia española de ordenación del espacio marítimo. MethaNor no afirma compatibilidad de permisos hasta realizar una intersección SIG con las capas oficiales POEM.",
+    "accessed": "2026-09-13",
+    "published_year": 2023,
+    "date_basis": "published_or_reference_year"
+  },
+  {
+    "id": "S07",
+    "title": "Oceanography / Portus",
+    "organization": "Puertos del Estado",
+    "year": 2026,
+    "url": "https://www.puertos.es/en/services/oceanography",
+    "use": "Measured and forecast oceanographic data for Spanish waters: buoys, tide gauges, wave forecasts, currents, sea level and marine-climate products.",
+    "quality": "Official measured and forecast metocean source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "wave observations",
+      "sea level",
+      "currents",
+      "metocean validation"
+    ],
+    "used_in": [
+      "Site",
+      "Platform",
+      "Methodology"
+    ],
+    "use_es": "Datos oceanográficos medidos y previstos para aguas españolas: boyas, mareógrafos, predicción de oleaje, corrientes, nivel del mar y productos de clima marítimo.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S08",
+    "title": "2024 Electricity Annual Technology Baseline",
+    "organization": "National Renewable Energy Laboratory",
+    "year": 2024,
+    "url": "https://atb.nrel.gov/electricity/2024/technologies",
+    "use": "Techno-economic reference for offshore-wind CAPEX/OPEX structure, capacity-factor context and uncertainty framing.",
+    "quality": "National laboratory techno-economic reference",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "offshore wind CAPEX",
+      "O&M",
+      "capacity factor",
+      "LCOE methodology"
+    ],
+    "used_in": [
+      "Build & Ops",
+      "Economics",
+      "Methodology"
+    ],
+    "use_es": "Referencia tecno-económica para estructura CAPEX/OPEX de eólica offshore, contexto de factor de capacidad y tratamiento de incertidumbre.",
+    "accessed": "2026-09-13",
+    "published_year": 2024,
+    "date_basis": "published_or_reference_year"
+  },
+  {
+    "id": "S09",
+    "title": "Direct Air Capture 2022",
+    "organization": "International Energy Agency",
+    "year": 2022,
+    "url": "https://www.iea.org/reports/direct-air-capture-2022",
+    "use": "Technology-maturity, energy-needs and cost-uncertainty context for direct-air-capture integration.",
+    "quality": "International agency technology assessment",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "DAC maturity",
+      "DAC energy and cost uncertainty"
+    ],
+    "used_in": [
+      "P2X",
+      "Economics",
+      "Methodology"
+    ],
+    "use_es": "Contexto de madurez tecnológica, necesidades energéticas e incertidumbre de costes para la integración de captura directa del aire.",
+    "accessed": "2026-09-13",
+    "published_year": 2022,
+    "date_basis": "published_or_reference_year"
+  },
+  {
+    "id": "S10",
+    "title": "Original academic thesis: 15 MW offshore P2X semisubmersible for e-methanol in the Cantabrian Sea",
+    "organization": "Universidad de Cantabria",
+    "year": 2026,
+    "url": "#origin",
+    "use": "Academic concept origin, site baseline, 15 MW semisubmersible design values, metocean assumptions and the first techno-economic model. Values are re-audited before reuse.",
+    "quality": "Academic baseline",
+    "evidence_class": "academic",
+    "confidence": "Medium",
+    "variables": [
+      "site baseline",
+      "displacement",
+      "draft",
+      "air gap",
+      "GM",
+      "original financial assumptions"
+    ],
+    "used_in": [
+      "Home",
+      "Site",
+      "Platform",
+      "Origin"
+    ],
+    "use_es": "Origen académico del concepto, referencia de emplazamiento, valores de diseño de la semisumergible de 15 MW, supuestos metoceánicos y primer modelo tecno-económico. Los valores se reauditan antes de reutilizarse.",
+    "accessed": "2026-09-13",
+    "published_year": 2026,
+    "date_basis": "published_or_reference_year",
+    "title_es": "TFG original: plataforma P2X semisumergible offshore de 15 MW para e-metanol en el Mar Cantábrico"
+  },
+  {
+    "id": "S11",
+    "title": "Electrolyzers for Hydrogen Production: Technical and Economic Characteristics",
+    "organization": "World Bank",
+    "year": 2026,
+    "url": "https://www.worldbank.org/en/topic/energy/publication/electrolyzers-for-hydrogen-production-technical-and-economic-characteristics",
+    "use": "Electrolyzer technology selection and procurement context; emphasizes project-specific total installed cost, EPC scope and bankability rather than a single headline equipment price.",
+    "quality": "Multilateral procurement / market context",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "electrolyzer procurement",
+      "installed CAPEX context",
+      "technology selection"
+    ],
+    "used_in": [
+      "Technology",
+      "Economics",
+      "Methodology"
+    ],
+    "use_es": "Contexto de selección y compra de electrolizadores; subraya coste total instalado específico del proyecto, alcance EPC y bancabilidad frente a un único precio titular de equipo.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S12",
+    "title": "Elyzer P-300 product literature",
+    "organization": "Siemens Energy",
+    "year": 2026,
+    "url": "https://www.siemens-energy.com/global/en/home/products-services/product-offerings/hydrogen-solutions.html",
+    "use": "Current manufacturer benchmark for the PEM platform descended from the Silyzer 300 referenced in the thesis; used to flag specification drift between academic and current manufacturer data.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "electrolyzer technology",
+      "plant efficiency",
+      "startup",
+      "turndown",
+      "purity"
+    ],
+    "used_in": [
+      "Technology",
+      "Origin"
+    ],
+    "use_es": "Referencia actual del fabricante para la plataforma PEM derivada del Silyzer 300 citado en el TFG; se usa para detectar cambios de especificación entre la referencia académica y los datos actuales del fabricante.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S13",
+    "title": "MC Series PEM",
+    "organization": "Nel Hydrogen",
+    "year": 2026,
+    "url": "https://nelhydrogen.com/product/mc-series-pem/",
+    "use": "Manufacturer data for 1.25–20 MW containerized PEM models, production rates, ramp capability, cold start and hydrogen purity.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "PEM module power",
+      "hydrogen output",
+      "ramp rate",
+      "purity"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Datos de fabricante para modelos PEM contenerizados de 1,25–20 MW, producción, capacidad de rampa, arranque en frío y pureza de hidrógeno.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S14",
+    "title": "POSEIDON 20 MW electrolyzer",
+    "organization": "ITM Power",
+    "year": 2026,
+    "url": "https://itm-power.com/products/poseidon",
+    "use": "Manufacturer benchmark for a 20 MW skid-mounted PEM module for large-scale projects.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "PEM module power",
+      "skid architecture",
+      "modularity"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia de fabricante para un módulo PEM de 20 MW montado en skid para proyectos de gran escala.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S15",
+    "title": "scalum® alkaline water electrolysis",
+    "organization": "thyssenkrupp nucera",
+    "year": 2026,
+    "url": "https://www.thyssenkrupp-nucera.com/technologies/alkaline-water-electrolysis",
+    "use": "Manufacturer benchmark for standardized 20 MW alkaline electrolysis, modularity, maintainability and dynamic operation.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "alkaline module power",
+      "modularity",
+      "dynamic operation"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia de fabricante para electrólisis alcalina estandarizada de 20 MW, modularidad, mantenibilidad y operación dinámica.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S16",
+    "title": "Standardized 10 MW SOEC Module — Fact Sheet",
+    "organization": "Sunfire",
+    "year": 2025,
+    "url": "https://backend.sunfire.de/wp-content/uploads/2024/10/Sunfire_Fact-Sheet_SOEC_EN_digital.pdf",
+    "use": "Manufacturer data for standardized SOEC efficiency, hydrogen output, specific consumption, flexibility and module footprint.",
+    "quality": "Manufacturer datasheet",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "SOEC specific consumption",
+      "hydrogen output",
+      "footprint",
+      "flexibility"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Datos de fabricante sobre eficiencia SOEC estandarizada, producción de hidrógeno, consumo específico, flexibilidad y huella de módulo.",
+    "accessed": "2026-09-13",
+    "published_year": 2025,
+    "date_basis": "published_or_reference_year"
+  },
+  {
+    "id": "S17",
+    "title": "Electrolyzer solutions",
+    "organization": "Plug Power",
+    "year": 2026,
+    "url": "https://www.plugpower.com/solutions/electrolyzers/",
+    "use": "Manufacturer portfolio context for modular PEM electrolysis packages used as a technology-comparison candidate.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "PEM module scale",
+      "modularity"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Contexto de producto del fabricante para paquetes modulares de electrólisis PEM utilizados como candidatos de comparación tecnológica.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S18",
+    "title": "Pressurized alkaline electrolysers",
+    "organization": "John Cockerill Hydrogen",
+    "year": 2026,
+    "url": "https://hydrogen.johncockerill.com/en/products/electrolysers/",
+    "use": "Manufacturer benchmark for pressurized alkaline electrolysis including 5 MW single-stack scale and industrial reference base.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "alkaline stack power",
+      "pressurized operation",
+      "industrial maturity"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia de fabricante para electrólisis alcalina presurizada, incluida escala de stack único de 5 MW y base de referencias industriales.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S19",
+    "title": "AEM Flex 120 datasheet",
+    "organization": "Enapter",
+    "year": 2026,
+    "url": "https://devices.enapter.com/electrolyser/aem-flex120/downloads/Enapter_Datasheet_AEM-Flex-120_EN.pdf",
+    "use": "Manufacturer data for AEM system consumption, hydrogen flow, pressure, purity, turndown, startup and dimensions.",
+    "quality": "Manufacturer datasheet",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "AEM specific consumption",
+      "pressure",
+      "turndown",
+      "dimensions"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Datos del fabricante del sistema AEM sobre consumo, caudal de hidrógeno, presión, pureza, carga mínima (turndown), arranque y dimensiones.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S20",
+    "title": "SOEC electrolysis technology",
+    "organization": "Topsoe",
+    "year": 2026,
+    "url": "https://www.topsoe.com/solutions/technologies/soec",
+    "use": "Manufacturer technology context for high-efficiency SOEC electrolysis and Power-to-X integration.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "SOEC pathway",
+      "thermal integration"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Contexto tecnológico del fabricante para electrólisis SOEC de alta eficiencia e integración Power-to-X.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S21",
+    "title": "ModuLite™ eMeOH",
+    "organization": "Topsoe",
+    "year": 2026,
+    "url": "https://www.topsoe.com/solutions/outputs/methanol/emethanol",
+    "use": "Manufacturer benchmark for modular e-methanol plants in 150–600 MTPD capacity tiers and dynamic operation with green-hydrogen feed.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "e-methanol capacity",
+      "H2 consumption",
+      "CO2 consumption",
+      "dynamic synthesis"
+    ],
+    "used_in": [
+      "Technology",
+      "P2X"
+    ],
+    "use_es": "Referencia de fabricante para plantas modulares de e-metanol en niveles de 150–600 t/día y operación dinámica con alimentación de hidrógeno verde.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S22",
+    "title": "eMERALD™ CO₂ to methanol",
+    "organization": "Johnson Matthey",
+    "year": 2026,
+    "url": "https://matthey.com/products-and-markets/chemicals/methanol/co2-to-methanol",
+    "use": "Manufacturer process benchmark for CO2-to-methanol, claimed conversion/feedstock efficiencies and commercial project references.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "CO2-to-methanol process",
+      "conversion",
+      "feedstock efficiency"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia de proceso del fabricante para CO₂-a-metanol, eficiencias declaradas de conversión/alimentación y referencias de proyectos comerciales.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S23",
+    "title": "Emissions-to-Liquids technology",
+    "organization": "Carbon Recycling International",
+    "year": 2026,
+    "url": "https://www.carbonrecycling.is/technology",
+    "use": "Commercial renewable-methanol technology benchmark and operating-reference context.",
+    "quality": "Manufacturer / licensor primary source",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "renewable methanol process",
+      "commercial maturity"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia tecnológica comercial de metanol renovable y contexto de instalaciones en operación.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S24",
+    "title": "Green methanol solutions",
+    "organization": "thyssenkrupp Uhde",
+    "year": 2026,
+    "url": "https://www.thyssenkrupp-uhde.com/en/products-and-technologies/green-chemicals/green-methanol",
+    "use": "Industrial engineering/licensor benchmark for green-methanol project integration.",
+    "quality": "Manufacturer / EPC primary source",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "green methanol process",
+      "project integration"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia de ingeniería/licenciante industrial para integración de proyectos de metanol verde.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S25",
+    "title": "Methanol plants",
+    "organization": "Linde Engineering",
+    "year": 2026,
+    "url": "https://www.linde-engineering.com/products-and-services/process-plants/hydrogen-and-synthesis-gas-plants/methanol-plants",
+    "use": "Industrial methanol synthesis and isothermal-reactor technology benchmark across plant scales.",
+    "quality": "Manufacturer / licensor primary source",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "methanol synthesis",
+      "reactor technology",
+      "plant scale"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia industrial de síntesis de metanol y tecnología de reactor isotermo en distintas escalas de planta.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S26",
+    "title": "MEGAMAX® methanol catalysts",
+    "organization": "Clariant",
+    "year": 2026,
+    "url": "https://www.clariant.com/en/Solutions/Products/2025/02/13/09/10/MEGAMAX-900",
+    "use": "Catalyst benchmark for modern methanol synthesis; used as supporting technology context rather than as a complete synthesis package.",
+    "quality": "Manufacturer primary source",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "methanol catalyst",
+      "synthesis conditions"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia de catalizador para síntesis moderna de metanol; se utiliza como contexto tecnológico de apoyo y no como paquete completo de síntesis.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S27",
+    "title": "Generation 3 direct air capture technology",
+    "organization": "Climeworks",
+    "year": 2026,
+    "url": "https://climeworks.com/press-release/next-gen-tech-powers-climeworks-megaton-leap",
+    "use": "Company-reported Gen-3 DAC performance direction: module throughput, energy reduction and 2030 cost targets. Targets are not treated as achieved project quotes.",
+    "quality": "Company primary source / forward target",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "DAC module performance",
+      "energy trend",
+      "cost target"
+    ],
+    "used_in": [
+      "Technology",
+      "P2X"
+    ],
+    "use_es": "Evolución de rendimiento DAC Gen-3 comunicada por la empresa: throughput de módulo, reducción energética y objetivos de coste 2030. Los objetivos no se tratan como ofertas o resultados ya alcanzados.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S28",
+    "title": "STRATOS direct air capture facility",
+    "organization": "1PointFive / Carbon Engineering",
+    "year": 2026,
+    "url": "https://www.1pointfive.com/about",
+    "use": "Large-scale liquid-solvent DAC benchmark; STRATOS is described as capable of up to 500,000 tCO2/y when fully operational.",
+    "quality": "Company primary source",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "DAC scale",
+      "liquid-solvent pathway"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia DAC a gran escala con solvente líquido; STRATOS se describe con capacidad de hasta 500.000 tCO₂/año cuando opere plenamente.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S29",
+    "title": "Direct Air Capture technology",
+    "organization": "Mission Zero Technologies",
+    "year": 2026,
+    "url": "https://www.missionzero.tech/",
+    "use": "Electrochemical DAC pathway benchmark for technology comparison; project values remain vendor/project specific.",
+    "quality": "Company primary source",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "electrochemical DAC",
+      "modularity"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia de vía DAC electroquímica para comparación tecnológica; los valores de proyecto siguen siendo específicos del proveedor/proyecto.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S30",
+    "title": "Heirloom direct air capture technology",
+    "organization": "Heirloom",
+    "year": 2026,
+    "url": "https://www.heirloomcarbon.com/technology",
+    "use": "Mineral/limestone-based DAC pathway benchmark for technology comparison.",
+    "quality": "Company primary source",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "mineral-loop DAC",
+      "material handling"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia de vía DAC basada en mineral/caliza para comparación tecnológica.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S31",
+    "title": "Hybrid Direct Air Capture technology",
+    "organization": "Avnos",
+    "year": 2026,
+    "url": "https://www.avnos.com/technology",
+    "use": "Hybrid DAC pathway benchmark, including water co-production claims; used as a comparison candidate, not an offshore-qualified selection.",
+    "quality": "Company primary source",
+    "evidence_class": "primary",
+    "confidence": "Medium",
+    "variables": [
+      "HDAC",
+      "water co-production",
+      "modularity"
+    ],
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Referencia de vía DAC híbrida, incluidas afirmaciones de coproducción de agua; se usa como candidato comparativo, no como selección cualificada para offshore.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S32",
+    "title": "OpenStreetMap standard tile layer",
+    "organization": "OpenStreetMap contributors",
+    "year": 2026,
+    "url": "https://www.openstreetmap.org/copyright",
+    "use": "Interactive cartographic basemap in the site explorer. It does not provide engineering layers such as bathymetry, wind, AIS or permitting.",
+    "quality": "Basemap / cartography",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "basemap"
+    ],
+    "used_in": [
+      "Site"
+    ],
+    "use_es": "Mapa base cartográfico interactivo del explorador de emplazamientos. No aporta capas de ingeniería como batimetría, viento, AIS o permisos.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S33",
+    "title": "World Imagery basemap",
+    "organization": "Esri and imagery contributors",
+    "year": 2026,
+    "url": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9",
+    "use": "Optional satellite/imagery basemap for visual context only. Imagery is not used to derive wind, depth, traffic or permitting conclusions.",
+    "quality": "Basemap / imagery",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "variables": [
+      "imagery basemap"
+    ],
+    "used_in": [
+      "Site"
+    ],
+    "use_es": "Mapa base satélite/imagen opcional, solo para contexto visual. La imagen no se usa para derivar viento, profundidad, tráfico ni conclusiones de permisos.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S34",
+    "title": "Sea-water Reverse Osmosis (SWRO)",
+    "year": 2026,
+    "url": "https://www.veoliawatertechnologies.com/en/solution/technologies/sea-water-reverse-osmosis",
+    "variables": [
+      "SWRO process",
+      "offshore/process-water applicability"
+    ],
+    "use": "Official technology context for seawater reverse osmosis; not a project quote.",
+    "organization": "Veolia Water Technologies",
+    "quality": "Official manufacturer technical page",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "used_in": [
+      "Technology",
+      "P2X"
+    ],
+    "use_es": "Contexto tecnológico oficial para ósmosis inversa de agua de mar; no es una oferta de proyecto.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S35",
+    "title": "Reverse Osmosis water-treatment portfolio",
+    "year": 2026,
+    "url": "https://www.dupont.com/water/reverse-osmosis-ro.html",
+    "variables": [
+      "RO membrane technology"
+    ],
+    "use": "Official manufacturer product context; not a complete desalination-plant design.",
+    "organization": "DuPont Water Solutions",
+    "quality": "Official manufacturer technical page",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "used_in": [
+      "Technology",
+      "P2X"
+    ],
+    "use_es": "Contexto oficial de producto del fabricante; no constituye un diseño completo de planta desaladora.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S36",
+    "title": "PX Pressure Exchanger technology",
+    "year": 2026,
+    "url": "https://energyrecovery.com/px-technology/",
+    "variables": [
+      "SWRO energy recovery",
+      "pressure exchanger"
+    ],
+    "use": "Official product technology context for SWRO energy recovery; not a full-plant guarantee.",
+    "organization": "Energy Recovery",
+    "quality": "Official manufacturer technical page",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "used_in": [
+      "Technology",
+      "P2X"
+    ],
+    "use_es": "Contexto tecnológico oficial del producto para recuperación de energía SWRO; no es una garantía de planta completa.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S37",
+    "title": "Marine technology portfolio",
+    "year": 2026,
+    "url": "https://www.alfalaval.com/industries/marine-transportation/marine/",
+    "variables": [
+      "marine integration context"
+    ],
+    "use": "Official marine-equipment context; exact process-water duty remains project specific.",
+    "organization": "Alfa Laval",
+    "quality": "Official manufacturer technical page",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "used_in": [
+      "Technology",
+      "Platform"
+    ],
+    "use_es": "Contexto oficial de equipos marinos; el servicio exacto de agua de proceso sigue siendo específico del proyecto.",
+    "accessed": "2026-09-13",
+    "published_year": null,
+    "date_basis": "live_page_accessed"
+  },
+  {
+    "id": "S38",
+    "title": "Topsoe adjusts SOEC commercialization pathway",
+    "year": 2026,
+    "url": "https://www.topsoe.com/investors/financial-releases/topsoe-adjusts-soec-commercialization-pathway-to-match-market-outlook-financial-guidance-updated",
+    "variables": [
+      "SOEC commercialization status"
+    ],
+    "use": "Current 2026 maturity/commercialization context. Topsoe states a revised pathway centered on partnerships, focused development and demonstration.",
+    "organization": "Topsoe",
+    "quality": "Official company announcement",
+    "evidence_class": "primary",
+    "confidence": "High",
+    "used_in": [
+      "Technology"
+    ],
+    "use_es": "Contexto actual de madurez/comercialización. Topsoe describe una ruta revisada centrada en alianzas, desarrollo focalizado y demostración.",
+    "accessed": "2026-09-13",
+    "published_year": 2026,
+    "date_basis": "published_or_reference_year"
+  }
+]

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="MethaNor — Conceptual Offshore e-Methanol Digital Twin. Auditable conceptual engineering, P2X and techno-economic screening for a Cantabrian Sea offshore e-methanol concept." />
+  <meta name="author" content="Aarón Expósito Monar" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="MethaNor — Conceptual Offshore e-Methanol Digital Twin" />
+  <meta property="og:description" content="Interactive, bilingual and source-traceable conceptual engineering model for offshore e-methanol." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/social-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MethaNor — Conceptual Offshore e-Methanol Digital Twin" />
+  <meta name="twitter:description" content="Offshore wind → H₂ → CO₂ → e-methanol → platform → operations → project finance." />
+  <meta name="twitter:image" content="assets/social-preview.png" />
+  <meta name="theme-color" content="#061517" />
+  <meta name="version" content="4.1" />
+  <title>MethaNor — Conceptual Offshore e-Methanol Digital Twin</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<noscript><div class="app-error noscript-error">MethaNor requires JavaScript for the interactive model. / MethaNor requiere JavaScript para el modelo interactivo.</div></noscript>
+<div id="appError" class="app-error" hidden></div>
+<div class="noise" aria-hidden="true"></div>
+<header class="topbar">
+  <a class="brand" href="#overview" aria-label="MethaNor home">
+    <span class="brand-mark">MN</span>
+    <span><strong>MethaNor</strong><small>Conceptual Offshore e-Methanol Digital Twin</small></span>
+  </a>
+  <nav class="topnav" aria-label="Main navigation">
+    <a href="#site" data-nav="site">Site</a>
+    <a href="#process" data-nav="process">P2X</a>
+    <a href="#technology" data-nav="technology">Technology</a>
+    <a href="#platform" data-nav="platform">Platform</a>
+    <a href="#build" data-nav="build">Build & Ops</a>
+    <a href="#economics" data-nav="economics">Economics</a>
+    <a href="#methodology" data-nav="methodology">Methodology</a>
+    <a href="#sources" data-nav="sources">Evidence</a>
+  </nav>
+  <div class="top-actions">
+    <div class="lang-switch" role="group" aria-label="Language"><button id="langEn" class="active" type="button">EN</button><button id="langEs" type="button">ES</button></div>
+    <button class="ghost-btn" id="resetBtn" type="button">Reset baseline</button>
+    <button class="solid-btn" id="exportBtn" type="button">Export scenario</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="overview" data-section>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">CONCEPTUAL ENGINEERING · DATA · FINANCE</div>
+        <h1>Design the <span>offshore molecule</span>, not just the platform.</h1>
+        <p class="lead">MethaNor evolves a 2026 Marine Engineering thesis into an auditable screening model: offshore wind → hydrogen → captured CO₂ → e-methanol → construction → operations → project finance.</p>
+        <div class="hero-actions">
+          <a class="solid-btn link-btn" href="#economics">Open scenario lab</a>
+          <a class="ghost-btn link-btn" href="#methodology">Read methodology</a>
+        </div>
+        <div class="hero-proof">
+          <span><b>Scientific correction</b> Energy conservation reconciled</span>
+          <span><b>Traceability</b> Every major input is source-tagged</span>
+          <span><b>Scope</b> Concept / pre-FEED screening</span>
+        </div>
+      </div>
+      <div class="hero-visual card">
+        <div class="hero-visual-head"><span>LIVE MODEL</span><span class="status-dot">Recomputed locally</span></div>
+        <div class="twin-orbit" aria-label="Conceptual offshore hub illustration">
+          <div class="sea-line"></div>
+          <div class="turbine-graphic"><div class="tower"></div><div class="nacelle"></div><div class="blade b1"></div><div class="blade b2"></div><div class="blade b3"></div></div>
+          <div class="platform-graphic"><div class="deck"></div><div class="col c1"></div><div class="col c2"></div><div class="pontoon"></div></div>
+          <div class="orbital-label l1">150 MW hub</div><div class="orbital-label l2">PEM electrolysis</div><div class="orbital-label l3">e-MeOH</div>
+        </div>
+        <div class="hero-kpis">
+          <div><small>Annual e-MeOH</small><strong id="heroMeoh">—</strong><span>t/y</span></div>
+          <div><small>Capacity factor</small><strong id="heroCf">—</strong><span>%</span></div>
+          <div><small>NPV @ WACC</small><strong id="heroNpv">—</strong><span>M€</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="audit-banner">
+      <div class="audit-icon">✓</div>
+      <div><b>Why this version exists.</b> The thesis reported 51,058 t/y for the original 15 MW concept. MethaNor performs an explicit energy-conservation audit: a single 15 MW energy source cannot support that output under the stated process intensities. The software therefore separates the <b>15 MW engineering unit</b> from the <b>150 MW commercial hub</b>.</div>
+      <a href="#origin">See correction ↘</a>
+    </div>
+    <div class="executive-snapshot card" aria-label="Executive decision snapshot">
+      <div class="snapshot-title"><span class="kicker">EXECUTIVE DECISION SNAPSHOT</span><h3>What the model says — and what still needs evidence.</h3></div>
+      <div class="snapshot-grid">
+        <div><span>Physics</span><b>15 MW unit ≠ 51 kt/y</b><small>Energy conservation is enforced; commercial output is scaled with a multi-unit hub.</small></div>
+        <div><span>Site</span><b>Screening, not permitting</b><small>Wind, depth and metocean can be explored; official GIS/AIS layers remain a decision gate.</small></div>
+        <div><span>Technology</span><b>Public data, no fabricated vendor quotations</b><small>Vendor candidates are source-linked and can be compared before any supported value enters the scenario.</small></div>
+        <div><span>Economics</span><b id="snapshotEconomics">Scenario-dependent</b><small>NPV, LCOeM, IRR, payback and break-even conditions recompute from visible assumptions.</small></div>
+      </div>
+      <div class="snapshot-actions"><a href="#site">Screen a site ↘</a><a href="#technology">Compare technology ↘</a><a href="#economics">Stress-test economics ↘</a><a href="#sources">Audit evidence ↘</a></div>
+    </div>
+  </section>
+
+  <section class="workspace-section" id="site" data-section>
+    <div class="section-head"><div><div class="eyebrow">01 · SITE INTELLIGENCE</div><h2>Screen the Cantabrian Sea before sizing steel.</h2></div><p>Site screening combines wind, bathymetry, metocean severity, port logistics and spatial-planning readiness. Only the thesis point is an academic baseline; comparison candidates are explicitly illustrative until GIS-refresh.</p></div>
+    <div class="site-layout">
+      <div class="map-card card">
+        <div class="card-head"><div><span class="kicker">BAY OF BISCAY · SCREENING VIEW</span><h3>Candidate site explorer</h3></div><a class="source-pill" href="#sources">S04 · S05 · S06 · S07</a></div>
+        <div class="geo-map-shell">
+          <div class="geo-map-toolbar">
+            <div class="map-style-switch"><button id="mapSatellite" class="active" type="button">Satellite</button><button id="mapStandard" type="button">Map</button></div>
+            <div class="map-zoom"><button id="mapZoomOut" type="button" aria-label="Zoom out">−</button><span id="mapZoomLabel">z7</span><button id="mapZoomIn" type="button" aria-label="Zoom in">+</button></div>
+          </div>
+          <div id="geoMap" class="geo-map" role="application" aria-label="Interactive Cantabrian Sea map">
+            <div id="mapTiles" class="map-tiles"></div>
+            <div id="mapOverlay" class="map-overlay"></div>
+            <div class="map-crosshair" aria-hidden="true"></div>
+            <div id="mapCursor" class="map-cursor-readout">43.59° N · 3.85° W</div>
+          </div>
+          <div id="mapAttribution" class="map-attribution">Imagery: Esri · engineering layers: not derived from imagery</div>
+        </div>
+        <div class="map-legend"><span><i class="legend-dot ref"></i> Academic baseline</span><span><i class="legend-dot candidate"></i> Illustrative scenario</span><span><i class="legend-line"></i> engineering data separate from basemap</span><span class="warning-inline">⚠ Basemap ≠ permitting evidence</span></div>
+      </div>
+      <div class="site-detail card">
+        <div class="card-head"><div><span class="kicker">SELECTED LOCATION</span><h3 id="siteName">Cantabria Reference</h3></div><div class="score-ring"><strong id="siteScore">—</strong><span>/100</span></div></div>
+        <div class="screening-badge"><span id="siteEvidenceClass">Academic baseline</span><b>PRELIMINARY SCREENING SCORE</b></div>
+        <div class="site-metrics">
+          <div><small>Coordinates</small><strong id="siteCoords">—</strong></div><div><small>Water depth</small><strong id="siteDepth">—</strong></div>
+          <div><small>Mean wind</small><strong id="siteWind">—</strong></div><div><small>Hs,50</small><strong id="siteWave">—</strong></div>
+          <div><small>Nearest port</small><strong id="siteNearestPort">—</strong></div><div><small>Port distance</small><strong id="sitePort">—</strong></div>
+          <div class="span2"><small>POEM status</small><strong id="sitePoem">—</strong></div>
+        </div>
+        <div class="quality-note" id="siteNote"></div>
+        <div id="siteDataGaps" class="site-gaps"></div>
+        <div class="site-actions">
+          <button id="centerSelectedSite" class="mini-link action-link" type="button">Center selection</button>
+          <button id="copySiteCoords" class="mini-link action-link" type="button">Copy coordinates</button>
+          <a id="openGoogleMaps" class="mini-link" target="_blank" rel="noreferrer">Open in Google Maps ↗</a>
+          <a class="mini-link" href="https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels" target="_blank" rel="noreferrer">ERA5 wind ↗</a>
+          <a class="mini-link" href="https://emodnet.ec.europa.eu/en/bathymetry" target="_blank" rel="noreferrer">EMODnet depth ↗</a>
+          <a class="mini-link" href="https://www.miteco.gob.es/es/costas/temas/proteccion-medio-marino/ordenacion-del-espacio-maritimo.html" target="_blank" rel="noreferrer">POEM ↗</a>
+        </div>
+        <details class="score-details"><summary>How is the screening score calculated?</summary><p>Weighted comparison only: wind 35%, bathymetry 20%, metocean 15%, port logistics 15%, spatial-planning readiness 15%. It is a prioritisation device, not an engineering acceptance criterion.</p></details>
+        <div class="weight-list"><div><span>Wind resource</span><i style="--w:35%"></i><b>35%</b></div><div><span>Bathymetry</span><i style="--w:20%"></i><b>20%</b></div><div><span>Metocean</span><i style="--w:15%"></i><b>15%</b></div><div><span>Port logistics</span><i style="--w:15%"></i><b>15%</b></div><div><span>Spatial planning</span><i style="--w:15%"></i><b>15%</b></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workspace-section" id="process" data-section>
+    <div class="section-head"><div><div class="eyebrow">02 · ENERGY & P2X</div><h2>One balance, from wind to molecule.</h2></div><p>The screening engine integrates a transparent IEA 15 MW reference-turbine curve against a Weibull distribution, then closes H₂/CO₂/e-methanol material and energy balances. <a href="#methodology">Equations ↘</a></p></div>
+    <div class="metric-strip">
+      <div class="metric-card"><span>Wind energy</span><strong id="annualEnergy">—</strong><small>GWh/y</small><em>Derived result</em></div>
+      <div class="metric-card"><span>H₂ requirement</span><strong id="h2Mass">—</strong><small>t/y</small><em>Stoichiometric</em></div>
+      <div class="metric-card"><span>CO₂ captured</span><strong id="co2Mass">—</strong><small>t/y</small><em>Stoichiometric</em></div>
+      <div class="metric-card accent"><span>e-Methanol</span><strong id="meohMass">—</strong><small>t/y</small><em>Energy-limited</em></div>
+    </div>
+    <div class="process-grid">
+      <div class="card flow-card">
+        <div class="card-head"><div><span class="kicker">MASS & ENERGY FLOW</span><h3>Process train</h3></div><a class="source-pill" href="#sources">S01 · S02 · S03 · S09</a></div>
+        <div class="process-flow">
+          <div class="process-node"><span>01</span><b>Wind</b><small id="flowWind">—</small><em>electricity</em></div><div class="flow-arrow">→</div>
+          <div class="process-node"><span>02</span><b>PEM</b><small id="flowPem">—</small><em>H₂ generation</em></div><div class="flow-arrow">→</div>
+          <div class="process-node"><span>03</span><b>H₂ buffer</b><small id="flowH2">—</small><em>24–48 h concept</em></div><div class="flow-arrow">+</div>
+          <div class="process-node"><span>04</span><b>DAC</b><small id="flowCo2">—</small><em>CO₂ feed</em></div><div class="flow-arrow">→</div>
+          <div class="process-node final"><span>05</span><b>MeOH</b><small id="flowMeoh">—</small><em>product</em></div>
+        </div>
+        <div class="energy-bars" id="energyBars"></div>
+      </div>
+      <div class="card audit-card">
+        <div class="card-head"><div><span class="kicker">CONSERVATION AUDIT</span><h3>15 MW energy-consistency check</h3></div><span class="quality-tag high">PHYSICS BOUND</span></div>
+        <p>A 15 MW source has an absolute annual electricity ceiling of <b>131.4 GWh</b>. Hydrogen stoichiometry alone therefore imposes a hard upper bound on methanol production; adding DAC, synthesis, water and balance-of-plant lowers it further.</p>
+        <div class="audit-scale"><div class="scale-row"><span>Thesis reported</span><i class="bad" style="--v:100%"></i><b>51,058 t/y</b></div><div class="scale-row"><span>H₂-only ceiling</span><i style="--v:27%"></i><b id="auditCeiling">—</b></div><div class="scale-row"><span>Modelled 15 MW</span><i class="good" id="auditActualBar" style="--v:12%"></i><b id="auditActual">—</b></div></div>
+        <div class="callout"><b>Design consequence.</b> MethaNor keeps the 15 MW semisubmersible as the naval unit and sizes commercial production with multiple units. This removes the hidden energy inconsistency without discarding the original concept.</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="workspace-section" id="technology" data-section>
+    <div class="section-head"><div><div class="eyebrow">03 · TECHNOLOGY & VENDOR EXPLORER</div><h2>Shortlist real technologies without inventing vendor quotations.</h2></div><p>Compare public manufacturer data for electrolysis, methanol synthesis, DAC and water treatment. The ranking is a transparent <b>portfolio-fit score</b>, not a universal “best vendor” list. Use a candidate to update only the scenario inputs that are actually supported.</p></div>
+    <div class="tech-toolbar card">
+      <div class="tech-tabs" role="tablist"><button data-techcat="electrolysis" class="active" type="button">Electrolysis</button><button data-techcat="methanol" type="button">Methanol synthesis</button><button data-techcat="dac" type="button">Direct air capture</button><button data-techcat="water" type="button">Water treatment</button></div>
+      <div class="tech-tools"><select id="techSort" aria-label="Technology sort"><option value="score">Portfolio fit</option><option value="scale">Scale</option><option value="vendor">Vendor</option></select><input id="techSearch" type="search" placeholder="Filter vendor or model…"></div>
+    </div>
+    <details class="score-details tech-score-method card" id="techScoreMethod">
+      <summary>How is Portfolio Fit calculated?</summary>
+      <div id="techScoreWeights" class="fit-method-grid"></div>
+      <p id="techScoreExplainer">The same weights are applied to every candidate. This is a concept-fit score, not a procurement recommendation, bankability rating or vendor guarantee.</p>
+    </details>
+    <div class="technology-layout">
+      <div class="card tech-list-card"><div class="card-head"><div><span class="kicker">RANKED SHORTLIST</span><h3 id="techCategoryTitle">Electrolysis candidates</h3></div><span id="techCount" class="quality-tag high">—</span></div><div id="techList" class="tech-list"></div></div>
+      <aside class="card tech-detail" id="techDetail"><div class="empty-state"><b>Select a candidate</b><span>Open its public specifications, rationale and source links here.</span></div></aside>
+    </div>
+    <div class="card tech-compare-card">
+      <div class="card-head"><div><span class="kicker">A / B / C TECHNOLOGY COMPARISON</span><h3>Compare public specifications side by side</h3></div><button id="clearTechCompare" class="mini-btn" type="button">Clear comparison</button></div>
+      <p class="compare-help">Use the A/B/C buttons in a candidate detail card. Empty or unpublished fields stay visibly blank — MethaNor does not infer vendor data.</p>
+      <div id="techComparison" class="tech-comparison"></div>
+    </div>
+    <div class="card benchmark-note"><div><span class="kicker">COST DISCIPLINE</span><h3>Vendor price ≠ literature benchmark</h3></div><p id="techCostNote">Public industrial-equipment prices are usually not published. MethaNor therefore shows “vendor quote required” and keeps category-level literature/target cost context separate from any named manufacturer.</p></div>
+  </section>
+
+  <section class="workspace-section" id="platform" data-section>
+    <div class="section-head"><div><div class="eyebrow">04 · FLOATING PLATFORM</div><h2>Preserve the naval concept. Expose every assumption.</h2></div><p>The geometry remains conceptual. Hydrostatic values inherited from the thesis are labelled as academic baselines; component placement below is a portfolio-level arrangement, not class-approved general arrangement.</p></div>
+    <div class="platform-layout">
+      <div class="card platform-card">
+        <div class="card-head"><div><span class="kicker">15 MW SEMISUBMERSIBLE UNIT</span><h3>Engineering concept model</h3></div><div class="view-toggle" role="group" aria-label="Platform view"><button class="active" data-platform-view="side" type="button">Side</button><button data-platform-view="plan" type="button">Plan</button></div></div>
+        <div id="platformSide" class="platform-view active">
+          <svg class="platform-svg detailed" viewBox="0 0 900 520" role="img" aria-label="MethaNor semisubmersible side elevation">
+            <defs><linearGradient id="deckGrad" x1="0" x2="1"><stop stop-color="#2b8e82"/><stop offset="1" stop-color="#70dfc2"/></linearGradient><linearGradient id="columnGrad" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#b8c8c4"/><stop offset="1" stop-color="#536b68"/></linearGradient></defs>
+            <g class="sea"><path d="M0 330 C120 315 230 346 340 326 C470 303 600 344 900 320"/><path class="fill" d="M0 330 C120 315 230 346 340 326 C470 303 600 344 900 320 L900 520 L0 520Z"/></g>
+            <g class="turbine-svg"><line x1="420" y1="94" x2="420" y2="285" class="tower-svg"/><rect x="405" y="82" width="35" height="18" rx="7"/><circle cx="420" cy="91" r="8"/><line x1="420" y1="91" x2="420" y2="17"/><line x1="420" y1="91" x2="354" y2="145"/><line x1="420" y1="91" x2="485" y2="145"/></g>
+            <polygon points="165,294 700,294 758,337 215,337" fill="url(#deckGrad)"/>
+            <rect x="220" y="337" width="92" height="119" rx="12" fill="url(#columnGrad)"/><rect x="610" y="337" width="92" height="119" rx="12" fill="url(#columnGrad)"/>
+            <polygon points="190,456 730,456 775,490 232,490" fill="#294c49"/>
+            <g class="modules"><rect x="250" y="257" width="92" height="37" rx="7" class="module pem"/><text x="296" y="280">PEM</text><rect x="352" y="266" width="65" height="28" rx="6" class="module dac"/><text x="384" y="285">DAC</text><rect x="460" y="250" width="105" height="44" rx="7" class="module meoh"/><text x="512" y="277">SYNTHESIS</text><rect x="575" y="262" width="85" height="32" rx="16" class="module storage"/><text x="617" y="282">MeOH</text></g>
+            <g class="mooring"><line x1="230" y1="468" x2="72" y2="515"/><line x1="690" y1="468" x2="840" y2="515"/><circle cx="68" cy="516" r="6"/><circle cx="844" cy="516" r="6"/></g>
+            <g class="dimension"><line x1="800" y1="94" x2="800" y2="330"/><line x1="792" y1="94" x2="808" y2="94"/><line x1="792" y1="330" x2="808" y2="330"/><text x="812" y="210">150 m hub height [S01/S10]</text><line x1="830" y1="294" x2="830" y2="330"/><text x="840" y="317">24.5 m air gap [S10]</text><line x1="850" y1="330" x2="850" y2="456"/><text x="860" y="400">22 m draft [S10]</text></g>
+          </svg>
+          <div class="module-legend"><span class="pem">PEM</span><span class="dac">DAC</span><span class="meoh">Synthesis</span><span class="storage">Product storage</span><span>⚓ Catenary mooring concept</span></div>
+        </div>
+        <div id="platformPlan" class="platform-view">
+          <svg class="platform-svg plan" viewBox="0 0 900 520" role="img" aria-label="MethaNor semisubmersible plan view">
+            <rect x="215" y="90" width="470" height="340" rx="22" class="plan-deck"/><rect x="245" y="120" width="105" height="105" rx="20" class="plan-column"/><rect x="550" y="120" width="105" height="105" rx="20" class="plan-column"/><rect x="245" y="295" width="105" height="105" rx="20" class="plan-column"/><rect x="550" y="295" width="105" height="105" rx="20" class="plan-column"/>
+            <circle cx="450" cy="260" r="70" class="rotor-clearance"/><text x="450" y="265" text-anchor="middle" class="plan-title">Turbine / central clearance</text>
+            <rect x="365" y="105" width="170" height="45" rx="9" class="module pem"/><text x="450" y="133" text-anchor="middle">PEM + power electronics</text><rect x="365" y="370" width="170" height="45" rx="9" class="module meoh"/><text x="450" y="398" text-anchor="middle">MeOH synthesis</text><rect x="235" y="240" width="112" height="42" rx="9" class="module dac"/><text x="291" y="266" text-anchor="middle">DAC</text><rect x="553" y="240" width="112" height="42" rx="21" class="module storage"/><text x="609" y="266" text-anchor="middle">Storage</text>
+            <g class="plan-dim"><line x1="215" y1="458" x2="685" y2="458"/><text x="450" y="482" text-anchor="middle">Concept deck envelope — not to scale</text></g>
+          </svg>
+          <div class="module-legend"><span>Four-column semisubmersible</span><span>Central turbine clearance</span><span>Separated hazardous/process zones conceptually</span></div>
+        </div>
+      </div>
+      <div class="platform-specs">
+        <div class="spec card"><small>Displacement</small><strong>24,000 t</strong><span>Academic baseline · S10</span></div><div class="spec card"><small>Operating draft</small><strong>22.0 m</strong><span>Academic baseline · S10</span></div><div class="spec card"><small>Air gap</small><strong>24.5 m</strong><span>Academic baseline · S10</span></div><div class="spec card"><small>GMeff</small><strong>3.13 m</strong><span>Academic hydrostatic result · S10</span></div><div class="spec card"><small>Hub height</small><strong>150 m</strong><span>Reference turbine · S01</span></div><div class="spec card"><small>Hs,50</small><strong>11.0 m</strong><span>Academic baseline · refresh via S07</span></div>
+        <div class="caveat card"><span class="quality-tag medium">CONCEPT LEVEL</span><h3>What MethaNor does not pretend to be</h3><p>No RAO/CFD, global finite-element model, fatigue assessment, class approval, detailed scantlings, mooring dynamics or hazardous-area design. Those are explicit gates before FEED/classification.</p></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="workspace-section compact-section" id="mass-budget" data-section>
+    <div class="section-head"><div><div class="eyebrow">04B · MASS & SPACE BUDGET</div><h2>Keep every equipment choice connected to naval reality.</h2></div><p>The baseline below is reconstructed from the thesis mass and vertical-moment register. It is an <b>academic weight model</b>, not a class-approved lightweight/deadweight estimate. Any vendor selection can change mass, footprint and VCG.</p></div>
+    <div class="mass-grid">
+      <div class="card mass-summary"><div class="card-head"><div><span class="kicker">ACADEMIC WEIGHT REGISTER · S10</span><h3>24,000 t displacement reconciliation</h3></div><span class="quality-tag medium">ACADEMIC</span></div><div class="mass-kpis"><div><small>Registered mass</small><strong id="massTotal">—</strong><span>t</span></div><div><small>Vertical moment</small><strong id="momentTotal">—</strong><span>t·m</span></div><div><small>Derived KG</small><strong id="kgDerived">—</strong><span>m</span></div><div><small>Mass closure</small><strong id="massClosure">—</strong><span>t</span></div></div><div id="massBars" class="mass-bars"></div></div>
+      <div class="card space-budget"><div class="card-head"><div><span class="kicker">TOPSIDE FOOTPRINT</span><h3>Known academic envelopes</h3></div><span class="source-pill">S10</span></div><div id="spaceTable" class="space-table"></div><div class="deck-usage"><div><span>Plant 0 reference deck</span><b id="deck0Use">—</b></div><div><span>Plant 1 reference deck</span><b id="deck1Use">—</b></div></div><p class="microcopy" id="massWarning"></p></div>
+    </div>
+  </section>
+
+  <section class="workspace-section" id="build" data-section>
+    <div class="section-head"><div><div class="eyebrow">05 · BUILD & OPERATIONS</div><h2>Translate technology into a project people can actually build and run.</h2></div><p>Work breakdown, staffing and campaign assumptions are author-defined portfolio inputs. They are deliberately separated from sourced engineering data and are editable in future releases.</p></div>
+    <div class="build-grid">
+      <div class="card gantt-card"><div class="card-head"><div><span class="kicker">REFERENCE EXECUTION PLAN</span><h3>60-month path to COD</h3></div><span class="quality-tag medium">AUTHOR ASSUMPTION</span></div><div class="gantt-head"><span></span><b>Y1</b><b>Y2</b><b>Y3</b><b>Y4</b><b>Y5</b></div><div id="gantt" class="gantt"></div></div>
+      <div class="card ops-card"><div class="card-head"><div><span class="kicker">OPERATING CONCEPT</span><h3>Remote-first + campaign maintenance</h3></div><span class="quality-tag medium">SCREENING</span></div><div id="opsList" class="ops-list"></div><div class="ops-total"><span>Indicative loaded employer cost</span><strong id="staffCost">—</strong><small>M€/y</small></div><p class="microcopy">Salary assumptions are portfolio inputs, not market quotations. Marine logistics, spares and contractor O&M sit outside this staffing subtotal.</p></div>
+    </div>
+    <div class="build-analytics">
+      <div class="card"><div class="card-head"><div><span class="kicker">CAPITAL PHASING</span><h3>Conceptual gross-CAPEX S-curve</h3></div><span class="source-pill">Scenario assumption</span></div><svg id="sCurveChart" class="mini-chart" viewBox="0 0 650 260" aria-label="CAPEX S curve"></svg></div>
+      <div class="card"><div class="card-head"><div><span class="kicker">PROJECT TEAM</span><h3>Indicative staffing by phase</h3></div><span class="source-pill">Author model</span></div><div id="phaseStaffing" class="phase-staffing"></div></div>
+      <div class="card lifecycle-card"><div class="card-head"><div><span class="kicker">O&M CYCLE</span><h3>How an operating year is structured</h3></div><span class="source-pill">Screening concept</span></div><div class="lifecycle"><div><b>01</b><span>Remote monitoring</span><small>continuous</small></div><i>→</i><div><b>02</b><span>Condition review</span><small>weekly / monthly</small></div><i>→</i><div><b>03</b><span>Planned campaign</span><small>2 windows/y</small></div><i>→</i><div><b>04</b><span>Corrective response</span><small>as required</small></div></div><div class="ops-metrics"><span><b>94%</b> baseline availability</span><span><b>2×</b> planned campaigns/y</span><span><b>Remote</b> normal operating mode</span></div></div>
+    </div>
+  </section>
+
+
+  <section class="workspace-section" id="risk" data-section>
+    <div class="section-head"><div><div class="eyebrow">06 · CONCEPT RISK REGISTER</div><h2>Expose what can break the concept before it becomes expensive.</h2></div><p>This is a concept-level risk register — <b>not a HAZOP</b>. Probability and impact are screening judgments used to prioritize the next engineering work package.</p></div>
+    <div class="risk-layout">
+      <div class="card risk-matrix-card"><div class="card-head"><div><span class="kicker">5 × 5 SCREENING MATRIX</span><h3>Probability × impact</h3></div><span id="riskHeadline" class="quality-tag medium">—</span></div><div id="riskMatrix" class="risk-matrix"></div><div class="risk-axis"><span>Probability →</span><span>Impact ↑</span></div></div>
+      <div class="card risk-register-card"><div class="registry-toolbar"><div><span class="kicker">RISK REGISTER</span><h3>Highest priorities first</h3></div><select id="riskFilter"><option value="all">All categories</option></select></div><div id="riskList" class="risk-list"></div></div>
+    </div>
+  </section>
+
+  <section class="workspace-section" id="economics" data-section>
+    <div class="section-head"><div><div class="eyebrow">07 · SCENARIO LAB</div><h2>Make every investment conclusion depend on visible assumptions.</h2></div><p>Change physical and financial drivers. Every KPI recomputes in-browser using the same equation set mirrored in the Python reference engine. Values are screening outputs, not bankable estimates.</p></div>
+    <div class="scenario-layout">
+      <aside class="controls card">
+        <div class="card-head"><div><span class="kicker">SCENARIO CONTROLS</span><h3>Assumptions</h3></div><button id="copyLinkBtn" class="mini-btn" type="button">Copy state</button></div>
+        <div class="preset-row"><button data-preset="conservative" type="button">Conservative</button><button data-preset="base" class="active" type="button">Base</button><button data-preset="optimistic" type="button">Optimistic</button></div>
+        <div class="control-group"><label for="turbineCount">Turbines <output id="turbineCountOut">10</output></label><input id="turbineCount" type="range" min="1" max="20" step="1" value="10"><small>15 MW each · S01</small></div>
+        <div class="control-group"><label for="meanWind">Mean wind <output id="meanWindOut">8.63 m/s</output></label><input id="meanWind" type="range" min="6.5" max="10.5" step="0.01" value="8.63"><small>Academic baseline; refresh via S04</small></div>
+        <div class="control-group"><label for="availability">Availability <output id="availabilityOut">94%</output></label><input id="availability" type="range" min="0.80" max="0.99" step="0.005" value="0.94"><small>Scenario assumption</small></div>
+        <div class="control-group"><label for="pem">PEM intensity <output id="pemOut">52 kWh/kg</output></label><input id="pem" type="range" min="45" max="60" step="0.5" value="52"><small>Editable screening value · S02</small></div>
+        <div class="control-group"><label for="capex">Gross CAPEX <output id="capexOut">€1,000 M</output></label><input id="capex" type="range" min="500" max="1800" step="10" value="1000"><small>Scenario input · uncertainty high</small></div>
+        <div class="control-group"><label for="opex">Annual OPEX <output id="opexOut">€33 M</output></label><input id="opex" type="range" min="15" max="70" step="1" value="33"><small>Scenario input</small></div>
+        <div class="control-group"><label for="price">MeOH price <output id="priceOut">€1,200/t</output></label><input id="price" type="range" min="500" max="2200" step="25" value="1200"><small>Market/offtake scenario — not a forecast</small></div>
+        <div class="control-group"><label for="grant">CAPEX grant <output id="grantOut">40%</output></label><input id="grant" type="range" min="0" max="0.7" step="0.01" value="0.4"><small>Policy scenario</small></div>
+        <div class="control-group"><label for="wacc">WACC <output id="waccOut">8.0%</output></label><input id="wacc" type="range" min="0.03" max="0.14" step="0.0025" value="0.08"><small>Financing assumption</small></div>
+      </aside>
+      <div class="economics-main">
+        <div class="econ-kpis"><div class="econ-card"><span>Annual e-MeOH</span><strong id="econMeoh">—</strong><small>t/y</small></div><div class="econ-card"><span>LCOeM</span><strong id="econLcoe">—</strong><small>€/t</small></div><div class="econ-card"><span>NPV @ WACC</span><strong id="econNpv">—</strong><small>M€</small></div><div class="econ-card"><span>Project IRR</span><strong id="econIrr">—</strong><small id="econIrrUnit">%</small></div><div class="econ-card"><span>Simple payback</span><strong id="econPayback">—</strong><small>years</small></div><div class="econ-card"><span>Year-1 margin</span><strong id="econMargin">—</strong><small>M€/y</small></div></div>
+        <div class="card chart-card"><div class="card-head"><div><span class="kicker">DISCOUNTED VALUE CONTEXT</span><h3>25-year cumulative project cashflow</h3></div><span id="financeVerdict" class="quality-tag low">—</span></div><svg id="cashChart" class="cash-chart" viewBox="0 0 820 300" aria-label="Cumulative project cash flow"></svg><p class="chart-note">The cashflow view is COD-normalized for screening: net CAPEX is placed at year 0; annual production degrades by 0.5%; terminal decommissioning is 3% of gross CAPEX.</p></div>
+        <div class="break-even-grid">
+          <div class="card break-card"><span>Break-even MeOH price</span><strong id="bePrice">—</strong><small>NPV = 0 at current assumptions</small></div>
+          <div class="card break-card"><span>Maximum gross CAPEX</span><strong id="beCapex">—</strong><small>NPV = 0</small></div>
+          <div class="card break-card"><span>Minimum CAPEX grant</span><strong id="beGrant">—</strong><small>NPV = 0</small></div>
+          <div class="card break-card"><span>Minimum mean wind</span><strong id="beWind">—</strong><small id="beWindNote">NPV = 0</small></div>
+          <div class="card break-card"><span>Maximum WACC</span><strong id="beWacc">—</strong><small>NPV = 0</small></div>
+        </div>
+        <div class="econ-row"><div class="card"><div class="card-head"><div><span class="kicker">COST STRUCTURE</span><h3>Levelized methanol cost</h3></div></div><div id="lcoeBreakdown" class="stacked-cost"></div></div><div class="card"><div class="card-head"><div><span class="kicker">SENSITIVITY</span><h3>What moves NPV most?</h3></div></div><div id="tornado" class="tornado"></div></div></div>
+        <div class="econ-row"><div class="card"><div class="card-head"><div><span class="kicker">GROSS CAPEX</span><h3>Portfolio cost allocation</h3></div><a class="source-pill" href="#sources">S08 + assumptions</a></div><div id="capexBreakdown" class="allocation-list"></div></div><div class="card"><div class="card-head"><div><span class="kicker">ANNUAL OPEX</span><h3>Operating cost allocation</h3></div><a class="source-pill" href="#sources">S08 + assumptions</a></div><div id="opexBreakdown" class="allocation-list"></div></div></div>
+        <div class="card scenario-compare-card"><div class="card-head"><div><span class="kicker">SCENARIO COMPARISON</span><h3>Freeze A / B / C and compare decisions</h3></div><div class="scenario-slot-actions"><button data-save-slot="A" type="button">Save A</button><button data-save-slot="B" type="button">Save B</button><button data-save-slot="C" type="button">Save C</button><button id="clearScenarios" type="button">Clear</button></div></div><div id="scenarioComparison" class="scenario-comparison"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workspace-section methodology-section" id="methodology" data-section>
+    <div class="section-head"><div><div class="eyebrow">08 · METHODOLOGY</div><h2>Equations in the interface, not hidden in a PDF.</h2></div><p>Every block below states what is calculated, the equation used, the evidence class and the assumptions that still need upgrading before engineering use.</p></div>
+    <div class="method-flow"><span>Wind climate</span><i>→</i><span>Power curve</span><i>→</i><span>Energy</span><i>→</i><span>H₂ + CO₂</span><i>→</i><span>e-MeOH</span><i>→</i><span>Economics</span></div>
+    <div class="method-grid">
+      <article class="method-card card"><div class="method-top"><span>01</span><div><b>Wind climate</b><small>Weibull screening model</small></div><a href="#sources">S04 · S10</a></div><div class="formula">c = v̄ / Γ(1 + 1/k)</div><p>The thesis mean wind <b>8.63 m/s</b> at hub height and shape factor <b>k = 2.2</b> are preserved as an academic baseline. The production version should ingest hourly ERA5 time series and quantify interannual variability.</p><div class="evidence-line"><span class="academic">Academic baseline</span><span>Upgrade: ERA5 hourly</span></div></article>
+      <article class="method-card card"><div class="method-top"><span>02</span><div><b>Wind-to-power</b><small>IEA 15 MW reference turbine</small></div><a href="#sources">S01</a></div><div class="formula">E = N · P<sub>rated</sub> · 8760 · CF · A</div><p>The browser numerically integrates a transparent piecewise screening power curve between the IEA turbine cut-in, rated and cut-out speeds. It is intentionally not presented as OpenFAST or aeroelastic simulation.</p><div class="evidence-line"><span class="primary">Primary reference</span><span>Derived result</span></div></article>
+      <article class="method-card card"><div class="method-top"><span>03</span><div><b>Stoichiometry</b><small>Mass balance</small></div><a href="#sources">S03</a></div><div class="formula">CO₂ + 3H₂ → CH₃OH + H₂O</div><p>Molar masses imply approximately <b>188.75 kg H₂/t MeOH</b> and <b>1.374 t CO₂/t MeOH</b>. The software derives these ratios rather than hard-coding a production yield.</p><div class="evidence-line"><span class="primary">Chemistry</span><span>Deterministic</span></div></article>
+      <article class="method-card card"><div class="method-top"><span>04</span><div><b>Process energy</b><small>Electricity-limited production</small></div><a href="#sources">S02 · S03 · S09</a></div><div class="formula">I<sub>total</sub> = (I<sub>PEM</sub> + I<sub>DAC</sub> + I<sub>synth</sub> + I<sub>water</sub>) / (1 − f<sub>BoP</sub>)</div><p>PEM intensity is editable and benchmarked to DOE targets. DAC, synthesis, water treatment and balance-of-plant are screening assumptions with higher uncertainty.</p><div class="evidence-line"><span class="primary">PEM sourced</span><span class="scenario">Other intensities: scenario</span></div></article>
+      <article class="method-card card"><div class="method-top"><span>05</span><div><b>Production</b><small>Energy conservation</small></div><a href="#origin">Audit</a></div><div class="formula">ṁ<sub>MeOH</sub> = E<sub>wind</sub> / I<sub>total</sub></div><p>This single equation is the critical scientific correction. It prevents the digital twin from claiming a methanol output that exceeds the electrical energy physically available.</p><div class="evidence-line"><span class="primary">Conservation law</span><span>Hard constraint</span></div></article>
+      <article class="method-card card"><div class="method-top"><span>06</span><div><b>Economics</b><small>COD-normalized DCF</small></div><a href="#sources">S08 + scenario</a></div><div class="formula">NPV = −CAPEX<sub>net</sub> + Σ CF<sub>t</sub>/(1+WACC)<sup>t</sup></div><p>CAPEX, OPEX, price, grant and WACC are explicit scenario controls. Production degrades 0.5%/y and a 3% gross-CAPEX decommissioning allowance is charged in the terminal year.</p><div class="evidence-line"><span class="scenario">Scenario model</span><span>Not investment advice</span></div></article>
+      <article class="method-card card wide"><div class="method-top"><span>07</span><div><b>Break-even solver</b><small>Decision support</small></div><span class="quality-tag high">NUMERIC</span></div><div class="formula">Find x such that NPV(x) = 0</div><p>Robust bisection solves the methanol price, maximum CAPEX, minimum grant, minimum wind resource and maximum WACC required to make the current scenario reach NPV = 0. This is more decision-useful than a single headline IRR.</p><div class="evidence-line"><span>Numerical solver</span><span>Same equations as scenario engine</span></div></article>
+    </div>
+    <div class="decision-log card"><div class="card-head"><div><span class="kicker">DESIGN DECISION LOG</span><h3>Rationale, alternatives and trade-offs</h3></div><span class="quality-tag high">AUDITABLE</span></div><div id="decisionGrid" class="decision-grid"></div></div>
+    <div class="limitations card"><div><span class="eyebrow">MODEL BOUNDARY</span><h3>What must happen before FEED</h3></div><div class="limitation-grid"><span>ERA5 multi-year hourly resource</span><span>EMODnet bathymetry/GIS</span><span>POEM official intersection</span><span>Hydrodynamics / RAOs</span><span>Mooring dynamics</span><span>Structural / fatigue analysis</span><span>Vendor process guarantees</span><span>HAZID / HAZOP / hazardous areas</span><span>Class & statutory basis</span><span>Environmental assessment</span></div></div>
+  </section>
+
+  <section class="workspace-section" id="sources" data-section>
+    <div class="section-head"><div><div class="eyebrow">09 · EVIDENCE & GOVERNANCE</div><h2>A source register instead of invisible assumptions.</h2></div><p>Each key claim is linked to a technical, government, agency or academic source. Where the evidence does not support a number, MethaNor labels it as a scenario assumption rather than inventing precision.</p></div>
+    <div class="evidence-grid">
+      <div class="card evidence-key"><div class="card-head"><div><span class="kicker">EVIDENCE HIERARCHY</span><h3>How to read the model</h3></div></div><div class="maturity"><div><i class="high"></i><p><b>Primary / official</b><small>NREL, DOE, ERA5, EMODnet, MITECO, Puertos del Estado, IEA, IRENA</small></p></div><div><i class="medium"></i><p><b>Academic baseline</b><small>Original thesis values, re-audited before reuse</small></p></div><div><i class="low"></i><p><b>Scenario assumption</b><small>Editable commercial / project-planning input</small></p></div></div><div class="evidence-rule"><b>Rule:</b> no source class is silently upgraded. A scenario value remains a scenario value even if the UI looks precise.</div></div>
+      <div class="card source-registry"><div class="registry-toolbar"><div><span class="kicker">EVIDENCE REGISTRY</span><h3>Source → variable → module</h3></div><input id="sourceSearch" type="search" placeholder="Filter source, variable or module…" aria-label="Filter source register"></div><div id="sourceTable" class="source-table"></div></div>
+    </div>
+  </section>
+
+  <section class="workspace-section origin-section" id="origin" data-section>
+    <div class="section-head"><div><div class="eyebrow">10 · PROJECT ORIGIN</div><h2>From thesis hypothesis to auditable engineering software.</h2></div><p>MethaNor does not replace or rewrite the academic thesis. It treats the thesis as the concept origin, preserves traceable design baselines, exposes what was uncertain and corrects what fails a physical audit.</p></div>
+    <div class="origin-hero card"><div><span class="kicker">ACADEMIC ORIGIN · 2026</span><h3>Conceptual multidisciplinary design and techno-economic feasibility of a 15 MW semisubmersible P2X platform for e-methanol in the Cantabrian Sea.</h3><p>BSc Marine Engineering · Universidad de Cantabria · Aarón Expósito Monar</p></div><div class="origin-badge">S10</div></div>
+    <div class="origin-timeline">
+      <div class="origin-step"><b>01</b><span>Original concept</span><p>15 MW floating wind + PEM + DAC + e-methanol on a semisubmersible platform.</p></div><i>→</i><div class="origin-step"><b>02</b><span>Independent re-audit</span><p>Energy conservation, stoichiometry, source provenance and financial logic checked explicitly.</p></div><i>→</i><div class="origin-step"><b>03</b><span>Scientific correction</span><p>The 51,058 t/y headline is separated from a single 15 MW unit and moved to a multi-unit hub architecture.</p></div><i>→</i><div class="origin-step"><b>04</b><span>Digital twin</span><p>Inputs become editable, results reproducible, evidence tagged and break-even conditions solvable.</p></div>
+    </div>
+    <div class="origin-grid">
+      <div class="card"><span class="kicker">PRESERVED</span><h3>What remains from the thesis</h3><ul class="check-list"><li>15 MW semisubmersible design unit</li><li>Cantabrian Sea concept and reference location</li><li>8.63 m/s mean-wind baseline and Weibull k = 2.2</li><li>24,000 t displacement, 22 m draft, 24.5 m air gap, GMeff 3.13 m</li><li>PEM + DAC + synthesis architecture</li><li>25-year economic screening concept</li></ul></div>
+      <div class="card"><span class="kicker">CHANGED</span><h3>What MethaNor improves</h3><ul class="check-list accent-list"><li>Energy-conservation constraint enforced</li><li>15 MW unit separated from 150 MW hub</li><li>Every key input given an evidence class</li><li>Native methodology and origin pages replace raw Markdown links</li><li>Interactive project, O&M and financial scenario model</li><li>Break-even solvers replace one-number viability claims</li></ul></div>
+      <div class="card"><span class="kicker">NOT CLAIMED</span><h3>What is still outside scope</h3><ul class="check-list muted-list"><li>No bankable energy yield assessment</li><li>No class-approved naval design</li><li>No vendor-quoted electrolyzer/DAC package</li><li>No final GIS permitting conclusion</li><li>No CFD/FEA/RAO/fatigue validation</li><li>No investment recommendation</li></ul></div>
+    </div>
+    <div class="audit-math card"><div><span class="kicker">THE KEY CORRECTION</span><h3>Why 51 kt/y cannot come from one 15 MW source</h3></div><div class="audit-math-grid"><div><span>Absolute electrical ceiling</span><b>15 MW × 8,760 h = 131.4 GWh/y</b></div><div><span>PEM-only MeOH ceiling</span><b id="originPemCeiling">—</b></div><div><span>Full-process ceiling</span><b id="originFullCeiling">—</b></div><div><span>Thesis headline</span><b class="danger">51,058 t/y</b></div></div><p>Even at 100% capacity factor and zero downtime, the original headline exceeds the electricity available once hydrogen demand is respected. MethaNor fixes the architecture rather than hiding the inconsistency.</p></div>
+  </section>
+
+  <section class="author-section" id="about" data-section>
+    <div class="author-card">
+      <div><div class="eyebrow">BUILT BY AARÓN EXPÓSITO MONAR</div><h2>Marine engineering, industrial data and decision-support software.</h2><p>MethaNor is an independent software evolution of my 2026 Marine Engineering thesis at Universidad de Cantabria. It is deliberately positioned as conceptual engineering software: transparent enough to audit, visual enough to communicate, and explicit about the work still required before professional engineering use.</p><div class="stack-tags"><span>Python reference engine</span><span>Vanilla JS digital twin</span><span>Scientific audit</span><span>Techno-economics</span><span>Offshore P2X</span><span>GitHub CI</span></div></div>
+      <div class="author-links"><a href="https://www.linkedin.com/in/aaronexpositomonar" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/aaronexposito0-creator" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#origin">Project origin ↗</a><a href="#methodology">Methodology ↗</a></div>
+    </div>
+  </section>
+</main>
+<footer><span>© 2026 Aarón Expósito Monar · MethaNor V4.2</span><span>Conceptual screening only · calculations are reproducible and evidence-tagged</span></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

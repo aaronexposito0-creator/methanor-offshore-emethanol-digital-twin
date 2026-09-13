@@ -1,0 +1,808 @@
+{
+  "meta": {
+    "title": "MethaNor Technology & Vendor Explorer",
+    "methodology": "Shortlist for conceptual screening. Scores are portfolio-fit scores, not a universal vendor ranking. Vendor pricing is never inferred where no public quote exists.",
+    "methodology_es": "Lista corta para cribado conceptual. Las puntuaciones son de encaje con este concepto, no un ranking universal de fabricantes. No se inventan precios de proveedor cuando no existe una oferta pública.",
+    "score_weights": {
+      "scale_fit": 0.25,
+      "dynamic_fit": 0.2,
+      "maturity": 0.2,
+      "offshore_integration": 0.15,
+      "pressure_or_integration": 0.1,
+      "evidence": 0.1
+    },
+    "price_policy": "Vendor quote required unless a manufacturer publishes a price. Category-level CAPEX benchmarks are contextual only and are not assigned to individual vendors.",
+    "score_explainer": "Same weights are applied to every candidate. The score measures fit with this conceptual offshore architecture; it is not a procurement recommendation, bankability rating or vendor guarantee.",
+    "score_explainer_es": "Se aplican los mismos pesos a todos los candidatos. La puntuación mide el encaje con esta arquitectura conceptual offshore; no es una recomendación de compra, una valoración de bancabilidad ni una garantía del proveedor.",
+    "score_labels": {
+      "scale_fit": [
+        "Scale fit",
+        "Encaje de escala"
+      ],
+      "dynamic_fit": [
+        "Dynamic operation",
+        "Operación dinámica"
+      ],
+      "maturity": [
+        "Technology maturity",
+        "Madurez tecnológica"
+      ],
+      "offshore_integration": [
+        "Offshore integration",
+        "Integración offshore"
+      ],
+      "pressure_or_integration": [
+        "Pressure / process integration",
+        "Presión / integración de proceso"
+      ],
+      "evidence": [
+        "Evidence completeness",
+        "Completitud de evidencia"
+      ]
+    }
+  },
+  "category_benchmarks": {
+    "electrolysis": {
+      "cost_note": "DOE 2026 PEM system CAPEX is a technical target, not a market quotation; World Bank procurement guidance stresses total installed/EPC cost and project-specific scope.",
+      "cost_note_es": "El CAPEX de sistema PEM 2026 del DOE es un objetivo técnico, no una oferta de mercado; la guía del Banco Mundial destaca el coste instalado/EPC y el alcance específico de cada proyecto.",
+      "source_ids": [
+        "S02",
+        "S11"
+      ]
+    },
+    "methanol": {
+      "cost_note": "IRENA renewable-methanol production-cost ranges are project-level context, not vendor package prices.",
+      "cost_note_es": "Los rangos de coste de metanol renovable de IRENA son contexto a nivel de proyecto, no precios de paquetes de proveedor.",
+      "source_ids": [
+        "S03"
+      ]
+    },
+    "dac": {
+      "cost_note": "DAC costs are highly site-, energy- and scale-dependent; company targets and IEA ranges are contextual, not quotations.",
+      "cost_note_es": "Los costes DAC dependen fuertemente del emplazamiento, energía y escala; los objetivos empresariales y rangos de la IEA son contexto, no ofertas.",
+      "source_ids": [
+        "S09",
+        "S27"
+      ]
+    },
+    "water": {
+      "cost_note": "RO package cost is not modelled as a vendor quote in MethaNor; procurement requires feedwater analysis, pretreatment and duty specification.",
+      "cost_note_es": "El coste del paquete de ósmosis inversa no se modela como oferta de proveedor en MethaNor; la compra requiere análisis de agua, pretratamiento y especificación de servicio.",
+      "source_ids": []
+    }
+  },
+  "items": [
+    {
+      "id": "siemens-p300",
+      "category": "electrolysis",
+      "vendor": "Siemens Energy",
+      "model": "Elyzer P-300",
+      "technology": "PEM",
+      "power_mw": 17.5,
+      "production_kg_h": 335,
+      "specific_kwh_kg": null,
+      "pressure_barg": 0.1,
+      "purity": "up to 99.999% with de-oxo dryer",
+      "turndown": "down to 40% load",
+      "startup": "<1 min",
+      "footprint": "Manufacturer project-specific",
+      "maturity": "Commercial product",
+      "offshore_note": "Large industrial PEM; offshore integration would require marine packaging and project-specific balance of plant.",
+      "offshore_note_es": "PEM industrial de gran escala; la integración offshore exigiría paquetización marina y balance de planta específico.",
+      "manufacturer_url": "https://www.siemens-energy.com/global/en/home/products-services/product-offerings/hydrogen-solutions.html",
+      "datasheet_url": "https://www.siemens-energy.com/global/en/home/products-services/product-offerings/hydrogen-solutions.html",
+      "source_ids": [
+        "S12"
+      ],
+      "score": {
+        "scale_fit": 95,
+        "dynamic_fit": 92,
+        "maturity": 92,
+        "offshore_integration": 62,
+        "pressure_or_integration": 50,
+        "evidence": 90
+      },
+      "thesis_relation": "The thesis selected Silyzer 300. Current manufacturer literature names the platform Elyzer P-300; some current brochure values differ from the thesis baseline.",
+      "thesis_relation_es": "El TFG seleccionó Silyzer 300. La documentación actual del fabricante denomina la plataforma Elyzer P-300; algunos valores actuales difieren de la referencia del TFG.",
+      "purity_es": "hasta 99,999% con secador de-oxo",
+      "turndown_es": "hasta 40% de carga mínima",
+      "startup_es": "<1 min",
+      "footprint_es": "Específico del proyecto según fabricante",
+      "maturity_es": "Producto comercial"
+    },
+    {
+      "id": "nel-mc4000",
+      "category": "electrolysis",
+      "vendor": "Nel Hydrogen",
+      "model": "MC4000",
+      "technology": "PEM",
+      "power_mw": 20,
+      "production_kg_h": 354.0,
+      "specific_kwh_kg": null,
+      "pressure_barg": null,
+      "purity": "99.9995% with integrated dryer",
+      "turndown": "manufacturer model-dependent",
+      "startup": "cold start <8 min; ramp ≤10%/s",
+      "footprint": "Factory-built containerized system",
+      "maturity": "Commercial product",
+      "offshore_note": "Containerized and factory-tested architecture is attractive for modular topsides integration, subject to marine certification.",
+      "offshore_note_es": "La arquitectura contenerizada y probada en fábrica es atractiva para la integración modular en la cubierta de proceso, sujeta a certificación marina.",
+      "manufacturer_url": "https://nelhydrogen.com/product/mc-series-pem/",
+      "datasheet_url": "https://nelhydrogen.com/product/mc-series-pem/",
+      "source_ids": [
+        "S13"
+      ],
+      "score": {
+        "scale_fit": 98,
+        "dynamic_fit": 92,
+        "maturity": 90,
+        "offshore_integration": 78,
+        "pressure_or_integration": 60,
+        "evidence": 88
+      },
+      "purity_es": "99,9995% con secador integrado",
+      "turndown_es": "dependiente del modelo del fabricante",
+      "startup_es": "arranque en frío <8 min; rampa ≤10%/s",
+      "footprint_es": "Sistema contenerizado fabricado en taller",
+      "maturity_es": "Producto comercial"
+    },
+    {
+      "id": "itm-poseidon",
+      "category": "electrolysis",
+      "vendor": "ITM Power",
+      "model": "POSEIDON",
+      "technology": "PEM",
+      "power_mw": 20,
+      "production_kg_h": null,
+      "specific_kwh_kg": null,
+      "pressure_barg": null,
+      "purity": "See manufacturer tech sheet",
+      "turndown": "See manufacturer tech sheet",
+      "startup": "Designed for variable renewable operation",
+      "footprint": "Skid-mounted prefabricated units",
+      "maturity": "Commercial product",
+      "offshore_note": "20 MW skid architecture and prefabrication are a strong scale match for the 150 MW hub concept.",
+      "offshore_note_es": "La arquitectura sobre skid de 20 MW y la prefabricación encajan bien con la escala del hub comercial de 150 MW.",
+      "manufacturer_url": "https://itm-power.com/products/poseidon",
+      "datasheet_url": "https://itm-power.com/products/poseidon",
+      "source_ids": [
+        "S14"
+      ],
+      "score": {
+        "scale_fit": 98,
+        "dynamic_fit": 92,
+        "maturity": 86,
+        "offshore_integration": 78,
+        "pressure_or_integration": 62,
+        "evidence": 82
+      },
+      "purity_es": "Consultar ficha técnica del fabricante",
+      "turndown_es": "Consultar ficha técnica del fabricante",
+      "startup_es": "Diseñado para operación con renovables variables",
+      "footprint_es": "Unidades prefabricadas montadas en skid",
+      "maturity_es": "Producto comercial"
+    },
+    {
+      "id": "nucera-scalum",
+      "category": "electrolysis",
+      "vendor": "thyssenkrupp nucera",
+      "model": "scalum®",
+      "technology": "Alkaline",
+      "power_mw": 20,
+      "production_kg_h": null,
+      "specific_kwh_kg": null,
+      "pressure_barg": 0,
+      "purity": "Project-specific gas treatment",
+      "turndown": "Wide operating range; exact limits project-specific",
+      "startup": "Fast dynamics stated by manufacturer",
+      "footprint": "Standardized modular skid",
+      "maturity": "Commercial product",
+      "offshore_note": "Large scale and modularity are attractive; non-pressurized H₂ means downstream compression must be explicitly included.",
+      "offshore_note_es": "La gran escala y modularidad son atractivas; el H₂ no presurizado obliga a incluir explícitamente compresión posterior.",
+      "manufacturer_url": "https://www.thyssenkrupp-nucera.com/technologies/alkaline-water-electrolysis",
+      "datasheet_url": "https://www.thyssenkrupp-nucera.com/wp-content/uploads/2024/10/thyssenkrupp-nucera_corporate_broshure_A4_241023_RZ_WEB.pdf",
+      "source_ids": [
+        "S15"
+      ],
+      "score": {
+        "scale_fit": 98,
+        "dynamic_fit": 80,
+        "maturity": 92,
+        "offshore_integration": 68,
+        "pressure_or_integration": 42,
+        "evidence": 88
+      },
+      "purity_es": "Tratamiento de gas específico del proyecto",
+      "turndown_es": "Amplio rango operativo; límites exactos específicos del proyecto",
+      "startup_es": "Dinámica rápida declarada por el fabricante",
+      "footprint_es": "Skid modular estandarizado",
+      "maturity_es": "Producto comercial"
+    },
+    {
+      "id": "sunfire-soec10",
+      "category": "electrolysis",
+      "vendor": "Sunfire",
+      "model": "10 MW SOEC module",
+      "technology": "SOEC",
+      "power_mw": 10.9,
+      "production_kg_h": 291,
+      "specific_kwh_kg": 37.5,
+      "pressure_barg": 3,
+      "purity": "99.9% after drying before cleaning",
+      "turndown": "50–100%",
+      "startup": "10%/min flexibility",
+      "footprint": "24 m²/MW net module footprint",
+      "maturity": "Commercializing standardized SOEC",
+      "offshore_note": "Exceptional efficiency if suitable steam/heat integration is available; integration complexity and technology maturity are higher than PEM/ALK.",
+      "offshore_note_es": "Eficiencia excepcional si existe vapor/calor adecuado; la complejidad de integración y madurez son mayores que en PEM/ALK.",
+      "manufacturer_url": "https://www.sunfire.de/en/hydrogen",
+      "datasheet_url": "https://backend.sunfire.de/wp-content/uploads/2024/10/Sunfire_Fact-Sheet_SOEC_EN_digital.pdf",
+      "source_ids": [
+        "S16"
+      ],
+      "score": {
+        "scale_fit": 88,
+        "dynamic_fit": 62,
+        "maturity": 72,
+        "offshore_integration": 48,
+        "pressure_or_integration": 55,
+        "evidence": 92
+      },
+      "purity_es": "99,9% tras secado antes de purificación final",
+      "turndown_es": "50–100%",
+      "startup_es": "flexibilidad de 10%/min",
+      "footprint_es": "24 m²/MW de huella neta de módulo",
+      "maturity_es": "SOEC estandarizado en comercialización"
+    },
+    {
+      "id": "plug-5mw",
+      "category": "electrolysis",
+      "vendor": "Plug Power",
+      "model": "5 MW PEM electrolyzer",
+      "technology": "PEM",
+      "power_mw": 5,
+      "production_kg_h": null,
+      "specific_kwh_kg": null,
+      "pressure_barg": null,
+      "purity": "See manufacturer specification",
+      "turndown": "Renewables-following PEM",
+      "startup": "Fast-response PEM architecture",
+      "footprint": "Containerized / turnkey package",
+      "maturity": "Commercial product",
+      "offshore_note": "Smaller modular blocks provide redundancy but increase unit count and interconnections at 150 MW scale.",
+      "offshore_note_es": "Bloques modulares menores aportan redundancia, pero aumentan el número de unidades e interconexiones a 150 MW.",
+      "manufacturer_url": "https://www.plugpower.com/hydrogen/electrolyzer-hydrogen/electrolyzer-products/",
+      "datasheet_url": "https://www.plugpower.com/maximize-your-green-hydrogen-production-with-plugs-5mw-electrolyzer/",
+      "source_ids": [
+        "S17"
+      ],
+      "score": {
+        "scale_fit": 72,
+        "dynamic_fit": 90,
+        "maturity": 88,
+        "offshore_integration": 72,
+        "pressure_or_integration": 60,
+        "evidence": 74
+      },
+      "purity_es": "Consultar especificación del fabricante",
+      "turndown_es": "PEM orientado a seguimiento de renovables",
+      "startup_es": "Arquitectura PEM de respuesta rápida",
+      "footprint_es": "Paquete contenerizado / llave en mano",
+      "maturity_es": "Producto comercial"
+    },
+    {
+      "id": "cockerill-5mw",
+      "category": "electrolysis",
+      "vendor": "John Cockerill Hydrogen",
+      "model": "5 MW single-stack",
+      "technology": "Pressurized alkaline",
+      "power_mw": 5,
+      "production_kg_h": 89.88,
+      "specific_kwh_kg": null,
+      "pressure_barg": null,
+      "purity": "Gas treatment package available",
+      "turndown": "Project-specific",
+      "startup": "Project-specific",
+      "footprint": "Large single-stack architecture",
+      "maturity": "Commercial product",
+      "offshore_note": "Pressurized alkaline can reduce downstream compression duty; project-level dynamic and marine-integration data are required.",
+      "offshore_note_es": "El alcalino presurizado puede reducir compresión posterior; se necesitan datos de dinámica e integración marina a nivel de proyecto.",
+      "manufacturer_url": "https://hydrogen.johncockerill.com/en/products/electrolysers/",
+      "datasheet_url": "https://hydrogen.johncockerill.com/en/",
+      "source_ids": [
+        "S18"
+      ],
+      "score": {
+        "scale_fit": 72,
+        "dynamic_fit": 66,
+        "maturity": 90,
+        "offshore_integration": 62,
+        "pressure_or_integration": 78,
+        "evidence": 78
+      },
+      "purity_es": "Paquete de tratamiento de gas disponible",
+      "turndown_es": "Específico del proyecto",
+      "startup_es": "Específico del proyecto",
+      "footprint_es": "Arquitectura de stack único de gran escala",
+      "maturity_es": "Producto comercial"
+    },
+    {
+      "id": "enapter-flex120",
+      "category": "electrolysis",
+      "vendor": "Enapter",
+      "model": "AEM Flex 120",
+      "technology": "AEM",
+      "power_mw": 0.115,
+      "production_kg_h": 2.16,
+      "specific_kwh_kg": 51.3,
+      "pressure_barg": 31,
+      "purity": "up to 99.999% with dryer",
+      "turndown": "12–100%",
+      "startup": "0–100% in 225 s from hot standby",
+      "footprint": "3.2 × 2.2 × 2.78 m",
+      "maturity": "Commercial modular product",
+      "offshore_note": "Excellent flexibility and pressure, but unit scale is far too small for a 150 MW hub without very high unit count.",
+      "offshore_note_es": "Excelente flexibilidad y presión, pero la escala unitaria es demasiado pequeña para un hub de 150 MW sin muchísimas unidades.",
+      "manufacturer_url": "https://enapter.com/en/product/aem-flex-120/",
+      "datasheet_url": "https://devices.enapter.com/electrolyser/aem-flex120/downloads/Enapter_Datasheet_AEM-Flex-120_EN.pdf",
+      "source_ids": [
+        "S19"
+      ],
+      "score": {
+        "scale_fit": 24,
+        "dynamic_fit": 96,
+        "maturity": 80,
+        "offshore_integration": 60,
+        "pressure_or_integration": 94,
+        "evidence": 96
+      },
+      "purity_es": "hasta 99,999% con secador",
+      "turndown_es": "12–100%",
+      "startup_es": "0–100% en 225 s desde standby caliente",
+      "footprint_es": "3,2 × 2,2 × 2,78 m",
+      "maturity_es": "Producto modular comercial"
+    },
+    {
+      "id": "topsoe-soec",
+      "category": "electrolysis",
+      "vendor": "Topsoe",
+      "model": "SOEC electrolyzer",
+      "technology": "SOEC",
+      "power_mw": null,
+      "production_kg_h": null,
+      "specific_kwh_kg": null,
+      "pressure_barg": null,
+      "purity": "Project-specific",
+      "turndown": "Designed for Power-to-X integration",
+      "startup": "Project-specific",
+      "footprint": "Modular industrial system",
+      "maturity": "Commercialization pathway revised in 2026; partnership / demonstration focus",
+      "offshore_note": "High-efficiency SOEC remains relevant to integrated e-fuels, but Topsoe revised its 2026 commercialization pathway; treat maturity and supply route as an explicit project risk.",
+      "offshore_note_es": "SOEC de alta eficiencia sigue siendo relevante para e-fuels integrados, pero Topsoe revisó en 2026 su ruta de comercialización; la madurez y el suministro deben tratarse como riesgo explícito del proyecto.",
+      "manufacturer_url": "https://www.topsoe.com/solutions/technologies/soec",
+      "datasheet_url": "https://www.topsoe.com/solutions/technologies/soec",
+      "source_ids": [
+        "S20",
+        "S38"
+      ],
+      "score": {
+        "scale_fit": 82,
+        "dynamic_fit": 62,
+        "maturity": 72,
+        "offshore_integration": 46,
+        "pressure_or_integration": 52,
+        "evidence": 74
+      },
+      "purity_es": "Específico del proyecto",
+      "turndown_es": "Diseñado para integración Power-to-X",
+      "startup_es": "Específico del proyecto",
+      "footprint_es": "Sistema industrial modular",
+      "maturity_es": "Ruta de comercialización revisada en 2026; foco en alianzas / demostración"
+    },
+    {
+      "id": "nel-mc1000",
+      "category": "electrolysis",
+      "vendor": "Nel Hydrogen",
+      "model": "MC1000",
+      "technology": "PEM",
+      "power_mw": 5,
+      "production_kg_h": 88.5,
+      "specific_kwh_kg": null,
+      "pressure_barg": null,
+      "purity": "99.9995% with integrated dryer",
+      "turndown": "manufacturer model-dependent",
+      "startup": "cold start <8 min; ramp ≤10%/s",
+      "footprint": "Containerized system",
+      "maturity": "Commercial product",
+      "offshore_note": "Smaller than MC4000 but offers finer redundancy and maintenance granularity.",
+      "offshore_note_es": "Menor que MC4000, pero ofrece mayor granularidad de redundancia y mantenimiento.",
+      "manufacturer_url": "https://nelhydrogen.com/product/mc-series-pem/",
+      "datasheet_url": "https://nelhydrogen.com/product/mc-series-pem/",
+      "source_ids": [
+        "S13"
+      ],
+      "score": {
+        "scale_fit": 74,
+        "dynamic_fit": 92,
+        "maturity": 90,
+        "offshore_integration": 80,
+        "pressure_or_integration": 60,
+        "evidence": 88
+      },
+      "purity_es": "99,9995% con secador integrado",
+      "turndown_es": "dependiente del modelo del fabricante",
+      "startup_es": "arranque en frío <8 min; rampa ≤10%/s",
+      "footprint_es": "Sistema contenerizado",
+      "maturity_es": "Producto comercial"
+    },
+    {
+      "id": "topsoe-modulite",
+      "category": "methanol",
+      "vendor": "Topsoe",
+      "model": "ModuLite™ eMeOH",
+      "technology": "CO₂ + green H₂ methanol synthesis",
+      "capacity": "150 / 300 / 450 / 600 MTPD",
+      "specific_kwh_kg": null,
+      "maturity": "Commercial modular solution",
+      "integration": "Dynamic loop for fluctuating green-H₂ feed; prefabricated truckable modules",
+      "manufacturer_url": "https://www.topsoe.com/solutions/outputs/methanol/emethanol",
+      "datasheet_url": "https://www.topsoe.com/solutions/outputs/methanol/emethanol",
+      "source_ids": [
+        "S21"
+      ],
+      "score": {
+        "scale_fit": 96,
+        "dynamic_fit": 92,
+        "maturity": 94,
+        "offshore_integration": 72,
+        "pressure_or_integration": 85,
+        "evidence": 96
+      },
+      "thesis_relation": "The thesis references Haldor Topsoe methanol synthesis; current Topsoe ModuLite eMeOH is a clearer commercial benchmark for modular PtX screening.",
+      "thesis_relation_es": "El TFG referencia síntesis de metanol de Haldor Topsoe; el ModuLite eMeOH actual es una referencia comercial más clara para un cribado PtX modular.",
+      "maturity_es": "Solución modular comercial",
+      "integration_es": "Bucle dinámico para alimentación variable de H₂ verde; módulos prefabricados transportables",
+      "capacity_es": "150 / 300 / 450 / 600 t/día"
+    },
+    {
+      "id": "jm-emerald",
+      "category": "methanol",
+      "vendor": "Johnson Matthey",
+      "model": "eMERALD™ CO₂-to-methanol",
+      "technology": "CO₂ + electrolytic H₂ methanol synthesis",
+      "capacity": "Tailored to project scale",
+      "maturity": "Commercial technology since 2011",
+      "integration": "Close to 100% conversion claimed; ~99% carbon and hydrogen efficiency claimed",
+      "manufacturer_url": "https://matthey.com/products-and-markets/chemicals/methanol/co2-to-methanol",
+      "datasheet_url": "https://matthey.com/products-and-markets/chemicals/methanol/co2-to-methanol",
+      "source_ids": [
+        "S22"
+      ],
+      "score": {
+        "scale_fit": 90,
+        "dynamic_fit": 82,
+        "maturity": 96,
+        "offshore_integration": 62,
+        "pressure_or_integration": 82,
+        "evidence": 94
+      },
+      "maturity_es": "Tecnología comercial desde 2011",
+      "integration_es": "El fabricante declara conversión próxima al 100% y ~99% de eficiencia de carbono e hidrógeno",
+      "capacity_es": "Adaptado a la escala del proyecto"
+    },
+    {
+      "id": "cri-etl",
+      "category": "methanol",
+      "vendor": "Carbon Recycling International",
+      "model": "Emissions-to-Liquids (ETL)",
+      "technology": "CO₂-to-methanol process",
+      "capacity": "Project-specific",
+      "maturity": "Commercial operating references",
+      "integration": "Renewable-electricity + captured-CO₂ methanol pathway",
+      "manufacturer_url": "https://www.carbonrecycling.is/technology",
+      "datasheet_url": "https://www.carbonrecycling.is/technology",
+      "source_ids": [
+        "S23"
+      ],
+      "score": {
+        "scale_fit": 86,
+        "dynamic_fit": 78,
+        "maturity": 92,
+        "offshore_integration": 58,
+        "pressure_or_integration": 80,
+        "evidence": 84
+      },
+      "maturity_es": "Referencias comerciales en operación",
+      "integration_es": "Ruta de metanol a partir de electricidad renovable y CO₂ capturado",
+      "capacity_es": "Específico del proyecto"
+    },
+    {
+      "id": "uhde-green-meoh",
+      "category": "methanol",
+      "vendor": "thyssenkrupp Uhde",
+      "model": "Green methanol solution",
+      "technology": "Green methanol synthesis",
+      "capacity": "Project-specific",
+      "maturity": "Industrial engineering offering",
+      "integration": "Large-project engineering integration",
+      "manufacturer_url": "https://www.thyssenkrupp-uhde.com/en/products-and-technologies/green-chemicals/green-methanol",
+      "datasheet_url": "https://www.thyssenkrupp-uhde.com/en/products-and-technologies/green-chemicals/green-methanol",
+      "source_ids": [
+        "S24"
+      ],
+      "score": {
+        "scale_fit": 88,
+        "dynamic_fit": 72,
+        "maturity": 90,
+        "offshore_integration": 56,
+        "pressure_or_integration": 78,
+        "evidence": 78
+      },
+      "maturity_es": "Oferta de ingeniería industrial",
+      "integration_es": "Integración de ingeniería para proyectos de gran escala",
+      "capacity_es": "Específico del proyecto"
+    },
+    {
+      "id": "linde-isothermal",
+      "category": "methanol",
+      "vendor": "Linde Engineering",
+      "model": "Isothermal methanol reactor / synthesis",
+      "technology": "Methanol synthesis loop",
+      "capacity": "~100 to >1,000 metric t/day plant context",
+      "maturity": "Industrial process technology",
+      "integration": "Isothermal reactor concept; project-specific synthesis loop",
+      "manufacturer_url": "https://www.linde-engineering.com/products-and-services/process-plants/hydrogen-and-synthesis-gas-plants/methanol-plants",
+      "datasheet_url": "https://www.linde-engineering.com/products-and-services/process-plants/hydrogen-and-synthesis-gas-plants/methanol-plants",
+      "source_ids": [
+        "S25"
+      ],
+      "score": {
+        "scale_fit": 92,
+        "dynamic_fit": 62,
+        "maturity": 96,
+        "offshore_integration": 48,
+        "pressure_or_integration": 76,
+        "evidence": 80
+      },
+      "maturity_es": "Tecnología de proceso industrial",
+      "integration_es": "Concepto de reactor isotermo y lazo de síntesis específico de proyecto",
+      "capacity_es": "contexto de plantas de ~100 a >1.000 t/día"
+    },
+    {
+      "id": "climeworks-gen3",
+      "category": "dac",
+      "vendor": "Climeworks",
+      "model": "Generation 3 DAC",
+      "technology": "Solid-sorbent temperature-vacuum swing DAC",
+      "capacity": "Modular; project scale dependent",
+      "maturity": "Commercial DAC developer; Gen 3 scale-up",
+      "integration": "Low-temperature heat integration potentially relevant; offshore packaging not qualified",
+      "manufacturer_url": "https://climeworks.com/",
+      "datasheet_url": "https://climeworks.com/press-release/next-gen-tech-powers-climeworks-megaton-leap",
+      "source_ids": [
+        "S27"
+      ],
+      "score": {
+        "scale_fit": 82,
+        "dynamic_fit": 72,
+        "maturity": 86,
+        "offshore_integration": 48,
+        "pressure_or_integration": 70,
+        "evidence": 88
+      },
+      "thesis_relation": "The thesis used a Climeworks-style solid-sorbent DAC concept. MethaNor keeps it as an academic lineage, not an offshore-qualified vendor selection.",
+      "thesis_relation_es": "El TFG usó un concepto DAC de sorbente sólido tipo Climeworks. MethaNor lo mantiene como linaje académico, no como selección offshore certificada.",
+      "maturity_es": "Desarrollador DAC comercial; escalado de Generación 3",
+      "integration_es": "La integración de calor de baja temperatura puede ser relevante; el empaquetado offshore no está cualificado públicamente",
+      "capacity_es": "Modular; depende de la escala del proyecto"
+    },
+    {
+      "id": "1pointfive-stratos",
+      "category": "dac",
+      "vendor": "1PointFive / Carbon Engineering",
+      "model": "STRATOS / liquid-solvent DAC",
+      "technology": "KOH-based liquid solvent DAC",
+      "capacity": "up to 500,000 tCO₂/y facility",
+      "maturity": "Large commercial-scale facility",
+      "integration": "Very large land-based process train; offshore fit is poor without radical re-packaging",
+      "manufacturer_url": "https://www.1pointfive.com/",
+      "datasheet_url": "https://www.1pointfive.com/about",
+      "source_ids": [
+        "S28"
+      ],
+      "score": {
+        "scale_fit": 98,
+        "dynamic_fit": 58,
+        "maturity": 90,
+        "offshore_integration": 20,
+        "pressure_or_integration": 66,
+        "evidence": 84
+      },
+      "maturity_es": "Instalación a gran escala comercial",
+      "integration_es": "Tren de proceso terrestre de gran tamaño; el encaje offshore es bajo sin una reconfiguración radical",
+      "capacity_es": "instalación de hasta 500.000 tCO₂/año"
+    },
+    {
+      "id": "missionzero",
+      "category": "dac",
+      "vendor": "Mission Zero Technologies",
+      "model": "Electrochemical DAC",
+      "technology": "Electrochemical solvent regeneration",
+      "capacity": "Project-specific modular plants",
+      "maturity": "Early commercial deployments",
+      "integration": "Modular architecture may suit constrained sites; project-specific offshore qualification required",
+      "manufacturer_url": "https://www.missionzero.tech/",
+      "datasheet_url": "https://www.missionzero.tech/",
+      "source_ids": [
+        "S29"
+      ],
+      "score": {
+        "scale_fit": 74,
+        "dynamic_fit": 76,
+        "maturity": 68,
+        "offshore_integration": 58,
+        "pressure_or_integration": 74,
+        "evidence": 68
+      },
+      "maturity_es": "Despliegues comerciales tempranos",
+      "integration_es": "La arquitectura modular puede encajar en ubicaciones restringidas; requiere cualificación offshore específica",
+      "capacity_es": "Plantas modulares específicas del proyecto"
+    },
+    {
+      "id": "heirloom",
+      "category": "dac",
+      "vendor": "Heirloom",
+      "model": "Limestone-based DAC",
+      "technology": "Accelerated mineral carbonation / calcination loop",
+      "capacity": "Project-specific",
+      "maturity": "Commercial-scale deployment pathway",
+      "integration": "Material handling and calcination make offshore integration challenging",
+      "manufacturer_url": "https://www.heirloomcarbon.com/",
+      "datasheet_url": "https://www.heirloomcarbon.com/technology",
+      "source_ids": [
+        "S30"
+      ],
+      "score": {
+        "scale_fit": 76,
+        "dynamic_fit": 54,
+        "maturity": 72,
+        "offshore_integration": 28,
+        "pressure_or_integration": 62,
+        "evidence": 72
+      },
+      "maturity_es": "Ruta de despliegue a escala comercial",
+      "integration_es": "La manipulación de sólidos y la calcinación complican la integración offshore",
+      "capacity_es": "Específico del proyecto"
+    },
+    {
+      "id": "avnos-hdac",
+      "category": "dac",
+      "vendor": "Avnos",
+      "model": "Hybrid Direct Air Capture (HDAC)",
+      "technology": "Moisture-swing / water-producing DAC",
+      "capacity": "Project-specific; multi-thousand-t/y projects announced",
+      "maturity": "Pilot / early commercial scale",
+      "integration": "Water co-production is conceptually attractive offshore; independent project data required",
+      "manufacturer_url": "https://www.avnos.com/",
+      "datasheet_url": "https://www.avnos.com/technology",
+      "source_ids": [
+        "S31"
+      ],
+      "score": {
+        "scale_fit": 70,
+        "dynamic_fit": 70,
+        "maturity": 62,
+        "offshore_integration": 60,
+        "pressure_or_integration": 72,
+        "evidence": 66
+      },
+      "maturity_es": "Piloto / escala comercial temprana",
+      "integration_es": "La coproducción de agua es conceptualmente atractiva offshore; requiere datos independientes de proyecto",
+      "capacity_es": "Específico del proyecto; proyectos de varios miles de t/año anunciados"
+    },
+    {
+      "id": "veolia-ro",
+      "category": "water",
+      "vendor": "Veolia Water Technologies",
+      "model": "Sea-water reverse osmosis solutions",
+      "technology": "SWRO",
+      "capacity": "Project-specific",
+      "maturity": "Commercial industrial",
+      "integration": "Pretreatment + SWRO + polishing sized to electrolyzer water demand",
+      "manufacturer_url": "https://www.veoliawatertechnologies.com/en/solution/technologies/sea-water-reverse-osmosis",
+      "datasheet_url": "https://www.veoliawatertechnologies.com/en/solution/technologies/sea-water-reverse-osmosis",
+      "source_ids": [
+        "S34"
+      ],
+      "score": {
+        "scale_fit": 88,
+        "dynamic_fit": 78,
+        "maturity": 96,
+        "offshore_integration": 76,
+        "pressure_or_integration": 80,
+        "evidence": 72
+      },
+      "maturity_es": "Industrial comercial",
+      "integration_es": "Pretratamiento + SWRO + pulido dimensionados según la demanda de agua del electrolizador",
+      "capacity_es": "Específico del proyecto"
+    },
+    {
+      "id": "dupont-filmtec",
+      "category": "water",
+      "vendor": "DuPont Water Solutions",
+      "model": "FilmTec™ seawater RO membranes",
+      "technology": "SWRO membrane",
+      "capacity": "Element / train scalable",
+      "maturity": "Commercial industrial",
+      "integration": "Membrane technology component; full plant requires pretreatment, pumps, ERDs and polishing",
+      "manufacturer_url": "https://www.dupont.com/water/reverse-osmosis-ro.html",
+      "datasheet_url": "https://www.dupont.com/water/reverse-osmosis-ro.html",
+      "source_ids": [
+        "S35"
+      ],
+      "score": {
+        "scale_fit": 84,
+        "dynamic_fit": 74,
+        "maturity": 98,
+        "offshore_integration": 78,
+        "pressure_or_integration": 76,
+        "evidence": 78
+      },
+      "maturity_es": "Industrial comercial",
+      "integration_es": "Componente de membrana; una planta completa requiere pretratamiento, bombas, recuperación de energía y pulido",
+      "capacity_es": "Escalable por elemento / tren"
+    },
+    {
+      "id": "energy-recovery-px",
+      "category": "water",
+      "vendor": "Energy Recovery",
+      "model": "PX® Pressure Exchanger",
+      "technology": "SWRO energy-recovery device",
+      "capacity": "Train-scalable",
+      "maturity": "Commercial industrial",
+      "integration": "Reduces high-pressure pump energy in seawater RO; component, not complete desalination plant",
+      "manufacturer_url": "https://energyrecovery.com/px-technology/",
+      "datasheet_url": "https://energyrecovery.com/px-technology/",
+      "source_ids": [
+        "S36"
+      ],
+      "score": {
+        "scale_fit": 86,
+        "dynamic_fit": 82,
+        "maturity": 98,
+        "offshore_integration": 80,
+        "pressure_or_integration": 88,
+        "evidence": 78
+      },
+      "maturity_es": "Industrial comercial",
+      "integration_es": "Reduce la energía de bombeo de alta presión en SWRO; es un componente, no una planta completa de desalación",
+      "capacity_es": "Escalable por trenes"
+    },
+    {
+      "id": "alfalaval-aquamar",
+      "category": "water",
+      "vendor": "Alfa Laval",
+      "model": "Marine freshwater / water-treatment portfolio",
+      "technology": "Marine water systems",
+      "capacity": "Project-specific",
+      "maturity": "Marine commercial",
+      "integration": "Marine pedigree is useful, but exact SWRO duty must be vendor-engineered",
+      "manufacturer_url": "https://www.alfalaval.com/industries/marine-transportation/marine/",
+      "datasheet_url": "https://www.alfalaval.com/industries/marine-transportation/marine/",
+      "source_ids": [
+        "S37"
+      ],
+      "score": {
+        "scale_fit": 74,
+        "dynamic_fit": 74,
+        "maturity": 98,
+        "offshore_integration": 94,
+        "pressure_or_integration": 72,
+        "evidence": 66
+      },
+      "maturity_es": "Comercial marino",
+      "integration_es": "La experiencia marina es relevante, pero el duty SWRO exacto debe ser diseñado por proveedor",
+      "capacity_es": "Específico del proyecto"
+    }
+  ]
+}

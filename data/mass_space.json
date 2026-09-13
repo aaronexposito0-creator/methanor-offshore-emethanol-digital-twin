@@ -1,0 +1,202 @@
+{
+  "source": "S10",
+  "title": "Academic mass & vertical-moment baseline from thesis Table 8",
+  "displacement_t": 24000,
+  "items": [
+    {
+      "name": "Naval substructure",
+      "name_es": "Subestructura naval",
+      "mass_t": 4500,
+      "vcg_m": 15.0,
+      "moment_tm": 67500,
+      "category": "structure"
+    },
+    {
+      "name": "Fixed magnetite ballast",
+      "name_es": "Lastre fijo de magnetita",
+      "mass_t": 6000,
+      "vcg_m": 2.0,
+      "moment_tm": 12000,
+      "category": "ballast"
+    },
+    {
+      "name": "Active seawater ballast",
+      "name_es": "Lastre activo de agua de mar",
+      "mass_t": 7500,
+      "vcg_m": 5.0,
+      "moment_tm": 37500,
+      "category": "ballast"
+    },
+    {
+      "name": "Stored green methanol (7 days)",
+      "name_es": "Metanol verde almacenado (7 días)",
+      "mass_t": 1500,
+      "vcg_m": 12.0,
+      "moment_tm": 18000,
+      "category": "liquid"
+    },
+    {
+      "name": "Suspended mooring chains",
+      "name_es": "Cadenas de fondeo suspendidas",
+      "mass_t": 500,
+      "vcg_m": 10.0,
+      "moment_tm": 5000,
+      "category": "mooring"
+    },
+    {
+      "name": "Central turbine support pillar",
+      "name_es": "Pilar central soporte turbina",
+      "mass_t": 450,
+      "vcg_m": 39.0,
+      "moment_tm": 17550,
+      "category": "structure"
+    },
+    {
+      "name": "IEA 15 MW turbine tower",
+      "name_es": "Torre turbina IEA 15 MW",
+      "mass_t": 860,
+      "vcg_m": 109.0,
+      "moment_tm": 93740,
+      "category": "turbine"
+    },
+    {
+      "name": "Rotor + nacelle assembly",
+      "name_es": "Conjunto rotor + góndola",
+      "mass_t": 1187,
+      "vcg_m": 150.0,
+      "moment_tm": 178050,
+      "category": "turbine"
+    },
+    {
+      "name": "Plant 0 — Siemens Silyzer 300 electrolysis",
+      "name_es": "Planta 0 — electrólisis Siemens Silyzer 300",
+      "mass_t": 408,
+      "vcg_m": 46.5,
+      "moment_tm": 18972,
+      "category": "process"
+    },
+    {
+      "name": "Plant 0 — desalination + auxiliaries",
+      "name_es": "Planta 0 — desalación + auxiliares",
+      "mass_t": 150,
+      "vcg_m": 46.5,
+      "moment_tm": 6975,
+      "category": "process"
+    },
+    {
+      "name": "Plant 1 — Topsoe methanol synthesis",
+      "name_es": "Planta 1 — síntesis de metanol Topsoe",
+      "mass_t": 350,
+      "vcg_m": 52.0,
+      "moment_tm": 18200,
+      "category": "process"
+    },
+    {
+      "name": "Plant 2 — Climeworks-style DAC",
+      "name_es": "Planta 2 — DAC tipo Climeworks",
+      "mass_t": 120,
+      "vcg_m": 57.0,
+      "moment_tm": 6840,
+      "category": "process"
+    },
+    {
+      "name": "Biomimetic superstructure",
+      "name_es": "Superestructura biomimética",
+      "mass_t": 300,
+      "vcg_m": 58.0,
+      "moment_tm": 17400,
+      "category": "structure"
+    },
+    {
+      "name": "Helideck + helicopter",
+      "name_es": "Helipuerto + helicóptero",
+      "mass_t": 155,
+      "vcg_m": 46.0,
+      "moment_tm": 7130,
+      "category": "operations"
+    },
+    {
+      "name": "2 × TEMPSC lifesaving craft",
+      "name_es": "2 × embarcaciones TEMPSC",
+      "mass_t": 20,
+      "vcg_m": 45.0,
+      "moment_tm": 900,
+      "category": "operations"
+    }
+  ],
+  "reported_total_mass_t": 24000,
+  "reported_total_moment_tm": 505757,
+  "reported_kg_m": 21.07,
+  "space_items": [
+    {
+      "name": "Electrolysis skid",
+      "name_es": "Skid de electrólisis",
+      "count": 1,
+      "length_m": 15,
+      "width_m": 7.5,
+      "area_m2": 112.5,
+      "source": "S10",
+      "status": "Academic baseline"
+    },
+    {
+      "name": "Electrical substation",
+      "name_es": "Subestación eléctrica",
+      "count": 1,
+      "length_m": 12,
+      "width_m": 6,
+      "area_m2": 72,
+      "source": "S10",
+      "status": "Academic baseline"
+    },
+    {
+      "name": "DAC collectors",
+      "name_es": "Colectores DAC",
+      "count": 12,
+      "length_m": 3,
+      "width_m": 2.4,
+      "area_m2": 86.4,
+      "source": "S10",
+      "status": "Academic baseline"
+    },
+    {
+      "name": "PCHE indicative unit",
+      "name_es": "Unidad PCHE indicativa",
+      "count": 1,
+      "length_m": 1.5,
+      "width_m": 1,
+      "area_m2": 1.5,
+      "source": "S10",
+      "status": "Academic baseline"
+    },
+    {
+      "name": "Methanol synthesis reactor",
+      "name_es": "Reactor de síntesis de metanol",
+      "count": 1,
+      "length_m": 8,
+      "width_m": null,
+      "area_m2": null,
+      "source": "S10",
+      "status": "Length only — footprint not stated"
+    }
+  ],
+  "deck_reference": [
+    {
+      "deck": "Plant 0 / main process deck",
+      "deck_es": "Planta 0 / cubierta principal de proceso",
+      "length_m": 36,
+      "width_m": 36,
+      "area_m2": 1296,
+      "status": "Academic geometry reference"
+    },
+    {
+      "deck": "Plant 1 / upper process deck",
+      "deck_es": "Planta 1 / cubierta superior de proceso",
+      "length_m": 30,
+      "width_m": 30,
+      "area_m2": 900,
+      "status": "Academic geometry reference"
+    }
+  ],
+  "warning": "This is an academic weight register, not a class-approved lightweight/deadweight estimate. Vendor selections can invalidate masses and centers of gravity.",
+  "warning_es": "Es un registro académico de pesos, no una estimación de peso ligero/peso muerto aprobada por clase. La selección real de equipos puede invalidar masas y centros de gravedad."
+}

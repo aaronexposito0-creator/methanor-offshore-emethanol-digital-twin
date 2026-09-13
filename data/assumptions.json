@@ -1,0 +1,31 @@
+{
+  "project": {
+    "name": "MethaNor Base Hub",
+    "architecture": "10 x 15 MW floating wind + central P2X hub",
+    "turbine_count": 10,
+    "turbine_mw": 15,
+    "lifetime_years": 25
+  },
+  "metocean": {
+    "mean_wind_ms": 8.63,
+    "weibull_k": 2.2,
+    "availability": 0.94,
+    "hs50_m": 11.0
+  },
+  "p2x": {
+    "pem_kwh_per_kg_h2": 52.0,
+    "dac_mwh_per_tco2": 0.55,
+    "synthesis_mwh_per_tmeoh": 0.70,
+    "water_mwh_per_tmeoh": 0.02,
+    "balance_of_plant_fraction": 0.06
+  },
+  "economics": {
+    "gross_capex_meur": 1000,
+    "annual_opex_meur": 33,
+    "methanol_price_eur_t": 1200,
+    "capex_grant_fraction": 0.40,
+    "wacc": 0.08,
+    "construction_years": 5,
+    "inflation": 0.02
+  }
+}
