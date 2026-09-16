@@ -6,6 +6,15 @@ MethaNor is an interactive, bilingual and source-traceable screening platform fo
 
 > **Scope:** conceptual / pre-FEED portfolio screening and decision support. It is **not** class approval, detailed design, HAZOP, a permitting opinion, a vendor quotation or investment advice.
 
+## Live project & engineering studies
+
+- **[Live Demo — MethaNor](https://aaronexposito0-creator.github.io/methanor-offshore-emethanol-digital-twin/)**
+- **[Engineering Study — Español](docs/MethaNor_Offshore_e-Methanol_Engineering_Study_ES.pdf)**
+- **[Engineering Study — English](docs/MethaNor_Offshore_eMethanol_Engineering_Study_EN.pdf)**
+
+The two PDF studies are publication-ready companion documents to the interactive platform. They present the engineering rationale, corrected energy-conservation basis, techno-economic screening logic, traceable assumptions and the roadmap from academic concept to a defensible pre-FEED-style study.
+
+
 ![MethaNor architecture](assets/architecture.svg)
 
 ## Why it exists
